@@ -1,6 +1,6 @@
 import "../css/sosialMedia.css"
 
-const sosialMedia =()=>{
+const Sosialmedia =()=>{
     return(
         <div>
             <div className="contacUS-container">
@@ -44,4 +44,4 @@ const sosialMedia =()=>{
     );
 }
 
-export default sosialMedia;
+export default Sosialmedia;
