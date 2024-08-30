@@ -1,11 +1,13 @@
-const Ips =()=>{
+import React from "react";
+
+const Ipa =()=>{
     return(
         <div>
             <h2>
-                IPS
+                IPA
             </h2>
         </div>
     )
 }
 
-export default Ips;
+export default Ipa;

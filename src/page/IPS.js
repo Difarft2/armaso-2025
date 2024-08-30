@@ -1,11 +1,13 @@
-const Mtk =()=>{
+import React from "react";
+
+const Ips =()=>{
     return(
         <div>
             <h2>
-                MTK
+                IPS
             </h2>
         </div>
     )
 }
 
-export default Mtk;
+export default Ips;

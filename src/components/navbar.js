@@ -1,25 +1,24 @@
-import "../css/Navbar.css"
+import React from "react";
+import { Link } from "react-router-dom";
 
-const navbar =()=>{
+const Navbar =()=>{
     return(
         <nav>
-            <div className="logo-armaso-navContainer">
-                
+            <div className="Logo">
+
             </div>
 
-            <div className="bagKanan-nav">
-                <ul>
-                    <li>
-                        {/* <Link to=""></Link> */}
-                    </li>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/ContactUS">contactUs</Link></li>
+            </ul>
 
-                    <li>
-                        {/* <Link to=""></Link> */}
-                    </li>   
-                </ul>
+            <div className="Pendaftaran">
+                <button className="Login">LOGIN</button>
+                <button className="Register">REGISTER</button>
             </div>
         </nav>
-)
+    )
 }
 
-export default navbar;
+export default Navbar;
