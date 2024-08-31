@@ -1,7 +1,9 @@
-const MenuMaple =()=>{
+import "../css/menumapel.css"
+
+const MenuMapel =()=>{
     return(
         <section>
-                <div className="Menu-container">
+                <div className="Menu-container" id="menumapel">
                     <div className="IPA-contaiener">
                         <a href="/Mapel/Ipa"><button className="IPA-button">IPA</button></a>
                     </div>
@@ -19,4 +21,4 @@ const MenuMaple =()=>{
     )
 }
 
-export default MenuMaple;
+export default MenuMapel;
