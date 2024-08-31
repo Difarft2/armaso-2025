@@ -9,7 +9,7 @@ import Home from "./page/home";
 import Ipa from "./page/IPA";
 import Ips from "./page/IPS";
 import Mtk from "./page/MTK";
-import ContactUs from "./page/contactUs";
+
 
 function App() {
   // const navigate = useNavigate();
@@ -32,7 +32,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         {/* Route path sub main */}
-        <Route path="/ContactUS" element={<ContactUs/>}/>
         {/* Route path mapel */}
         <Route path="/Mapel/Ipa" element={<Ipa/>}/>
         <Route path="/Mapel/Ips" element={<Ips/>}/>
