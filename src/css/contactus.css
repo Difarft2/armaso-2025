@@ -1,5 +1,134 @@
-.contactUS-container{
-    background-color: rgb(0, 255, 21);
-    width: 100vh;
-    height: 150vh;
+/* Styling untuk container utama */
+.contactUS-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling untuk container utama */
+.contactUS-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px; /* Optional: to limit the width */
+    width: 100%;
+}
+
+/* Bagian kiri (bagKiri) */
+.bagKiri-container {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bagKiri-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.bagKiri-container div {
+    display: flex;
+    align-items: center;
+}
+
+.bagKiri-container a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Bagian kanan (bagKanan) */
+.bagKanan-container {
+    flex: 1;
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bagKanan-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.bagKanan-container div {
+    display: flex;
+    align-items: center;
+}
+
+.bagKanan-container a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Bagian tengah (bagTengah) */
+.bagTengah-container {
+    flex: 1;
+    background-color: #d9d9d9;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bagTengah-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.bagTengah-container div {
+    display: flex;
+    align-items: center;
+}
+
+.bagTengah-container a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+    .contactUS-container {
+        flex-direction: column;
+    }
+
+    .bagKiri-container,
+    .bagTengah-container,
+    .bagKanan-container {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+    .bagKiri-container img,
+    .bagTengah-container img,
+    .bagKanan-container img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contactUS-container {
+        padding: 10px;
+    }
+
+    .bagKiri-container,
+    .bagTengah-container,
+    .bagKanan-container {
+        padding: 10px;
+    }
 }

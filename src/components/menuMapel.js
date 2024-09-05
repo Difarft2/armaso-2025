@@ -14,7 +14,7 @@ const MenuMapel =()=>{
                     </div>
 
                     <div className="MTK-container">
-                        <a href="/Mapel/Ips"><button className="MTK-button">MTK</button></a>
+                        <a href="/Mapel/Mtk"><button className="MTK-button">MTK</button></a>
                     </div>
                 </div>
         </section>
