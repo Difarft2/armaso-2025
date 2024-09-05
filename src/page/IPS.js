@@ -2,12 +2,12 @@ import "../css/ips.css"
 import React from "react";
 
 import Copyright from "../components/copyright";
-import Navbar from "../components/navbar";
+import Nav from "../components/navbar";
 
 const Ips =()=>{
     return(
         <div>
-            <Navbar/>
+            <Nav/>
             <h2>
                 IPS
             </h2>

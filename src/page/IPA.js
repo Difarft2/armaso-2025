@@ -2,12 +2,12 @@ import "../css/ipa.css"
 import React from "react";
 
 import Copyright from "../components/copyright";
-import Navbar from "../components/navbar";
+import Nav from "../components/navbar";
 
 const Ipa =()=>{
     return(
         <div>
-            <Navbar/>
+            <Nav/>
             <h2>
                 IPA
             </h2>
