@@ -10,8 +10,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    gap: 20px;
-    max-width: 1200px; /* Optional: to limit the width */
+    gap: 30px;
+    max-width: 1300px; /* Optional: to limit the width */
     width: 100%;
 }
 
@@ -40,7 +40,7 @@
 .bagKiri-container a {
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: none;
 }
 
 /* Bagian kanan (bagKanan) */
@@ -68,7 +68,7 @@
 .bagKanan-container a {
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: none;
 }
 
 /* Bagian tengah (bagTengah) */
@@ -96,7 +96,7 @@
 .bagTengah-container a {
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: none;
 }
 
 /* Responsif untuk tablet */
