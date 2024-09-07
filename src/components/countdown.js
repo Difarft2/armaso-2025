@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../css/countdown.css"
 
 const Countdownt =({targetDate})=>{
     const calculateTimeLeft = () => {
@@ -52,13 +53,36 @@ const Countdownt =({targetDate})=>{
     }, [targetDate]);
 
     return (
-        <div>
-            <h1>Countdown Timer</h1>
-            <div>
-                {timeLeft.months} months {timeLeft.days} days {timeLeft.hours} hours {timeLeft.minutes} minutes{" "}
-                {timeLeft.seconds} seconds
+    <div>
+        <h2 className="judul-cd">COUNTDOWN</h2>
+
+        <div className="countdown-container">
+            <div className="countdown-item">
+                {timeLeft.months}
+                <span>Bulan</span>
             </div>
+
+            <div className="countdown-item">
+                {timeLeft.days}
+                <span>Hari</span>
+            </div>
+
+            <div className="countdown-item">
+                {timeLeft.hours}
+                <span>Jam</span>
+           </div>
+
+            <div className="countdown-item">
+                {timeLeft.minutes}
+                <span>Menit</span>
+            </div>
+
+            {/* <div className="countdown-item">
+                {timeLeft.seconds}
+                <span>Detik</span>
+            </div> */}
         </div>
+    </div>
     );
 };
 
