@@ -38,7 +38,7 @@
   font-size: 14px;
   font-weight: bold;
   white-space: normal; /* Allows text to wrap */
-  word-break: break-word; /* Breaks long words if necessary */
+  /* word-break: break-word;  */
 }
 
 .timeline-bar {
