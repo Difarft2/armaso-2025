@@ -5,10 +5,11 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 // import {useNavigate } from "react-router-dom";
 
 //page
-import Home from "./page/home";
+import Home from "./page/Home";
 import Ipa from "./page/IPA";
 import Ips from "./page/IPS";
 import Mtk from "./page/MTK";
+import Notfound from "./page/Notfound";
 
 
 function App() {
@@ -31,11 +32,12 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        {/* Route path sub main */}
         {/* Route path mapel */}
         <Route path="/Mapel/Ipa" element={<Ipa/>}/>
         <Route path="/Mapel/Ips" element={<Ips/>}/>
         <Route path="/Mapel/Mtk" element={<Mtk/>}/>
+        {/* Not found path */}
+        <Route path="*" element={<Notfound/>}/>
       </Routes>
     </Router>
   );
