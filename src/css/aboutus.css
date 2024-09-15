@@ -1,3 +1,61 @@
+/* Modal Styles */
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.modal-header {
+  /* border-bottom: none;  */
+  padding-bottom: 10px;
+}
+
+.modal-footer {
+  /* border-top: none;  */
+  padding-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 600px; /* Restrict width for larger screens */
+  }
+
+  .modal-content {
+    padding: 30px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .modal-dialog {
+    margin: 20px; 
+  }
+
+  .modal-content {
+    padding: 15px; 
+  }
+
+  .modal-title {
+    font-size: 1.5rem; 
+  }
+
+  /* .modal-body {
+    font-size: 1rem; 
+  }
+
+  .modal-footer {
+    flex-direction: column; 
+  }
+
+  .modal-footer .btn {
+    width: 100%; 
+    margin-bottom: 10px; 
+  } */
+}
+
+/* AboutUs styles */
 
 * {
   margin: 0;

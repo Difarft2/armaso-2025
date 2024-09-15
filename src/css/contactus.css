@@ -1,134 +1,130 @@
-/* Styling untuk container utama */
-.contactUS-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+:root {
+    font-size: 16px;
 }
 
-/* Styling untuk container utama */
-.contactUS-container {
-    display: flex;
-    justify-content: space-between;
+body {
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
     padding: 20px;
-    gap: 30px;
-    max-width: 1300px; /* Optional: to limit the width */
-    width: 100%;
 }
 
-/* Bagian kiri (bagKiri) */
-.bagKiri-container {
-    flex: 1;
-    background-color: #f0f0f0;
-    padding: 15px;
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #00bcd4;
+}
+
+.contact-card h3 {
+    color: #00bcd4;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.bagKiri-container img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.bagKiri-container div {
+.contact-name {
     display: flex;
     align-items: center;
 }
 
-.bagKiri-container a {
-    color: black;
-    text-decoration: none;
-    font-weight: none;
-}
-
-/* Bagian kanan (bagKanan) */
-.bagKanan-container {
-    flex: 1;
-    background-color: #e6e6e6;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.bagKanan-container img {
+.contact-name img {
     width: 30px;
-    height: 30px;
     margin-right: 10px;
 }
 
-.bagKanan-container div {
+.contact-info {
     display: flex;
     align-items: center;
 }
 
-.bagKanan-container a {
-    color: black;
-    text-decoration: none;
-    font-weight: none;
-}
-
-/* Bagian tengah (bagTengah) */
-.bagTengah-container {
-    flex: 1;
-    background-color: #d9d9d9;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.bagTengah-container img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.bagTengah-container div {
+.contact-button {
     display: flex;
     align-items: center;
-}
-
-.bagTengah-container a {
-    color: black;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-/* Responsif untuk tablet */
-@media (max-width: 768px) {
-    .contactUS-container {
-        flex-direction: column;
-    }
-
-    .bagKiri-container,
-    .bagTengah-container,
-    .bagKanan-container {
-        flex: 1;
-        margin-bottom: 20px;
-    }
+.contact-button:hover {
+    background-color: #0097a7;
 }
 
-/* Responsif untuk ponsel */
-@media (max-width: 480px) {
-    .bagKiri-container img,
-    .bagTengah-container img,
-    .bagKanan-container img {
-        width: 20px;
-        height: 20px;
-    }
+.contact-button img {
+    width: 20px;
+    margin-right: 5px;
+}
 
-    .contactUS-container {
-        padding: 10px;
-    }
+/* Styling for the colorful frame around the card */
+body {
+    background-color: aqua;
+}
 
-    .bagKiri-container,
-    .bagTengah-container,
-    .bagKanan-container {
-        padding: 10px;
-    }
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.contact-card {
+    border: none;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contact-button {
+    background-color: #00bcd4;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0097a7;
+}
+
+.contact-button img {
+    margin-right: 10px;
 }
