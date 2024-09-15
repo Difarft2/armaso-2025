@@ -1,0 +1,84 @@
+
+.interactive-timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+  text-align: center;
+  max-width: 120px; /* Adjust as needed */
+}
+
+.step-item.active {
+  color: #007bff; /* Change color to indicate active step */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: 5px;
+}
+
+.step-label {
+  font-size: 14px;
+  font-weight: bold;
+  white-space: normal; /* Allows text to wrap */
+  /* word-break: break-word;  */
+}
+
+.timeline-bar {
+  width: 50%;
+  height: 5px;
+  background-color: #e0e0e0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.step-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 16px;
+  color: #333;
+}

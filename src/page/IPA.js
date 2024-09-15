@@ -1,6 +1,6 @@
 import "../css/ipa.css"
 import React from "react";
-
+import "../css/navbar.css"
 import Copyright from "../components/copyright";
 import Nav from "../components/navbar";
 
