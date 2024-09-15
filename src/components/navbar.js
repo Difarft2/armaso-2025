@@ -37,7 +37,6 @@ const Navbarr = () => {
             </Navbar>
         </Headroom>
     );
-    // jjjhjjjhdhhdujhdhdhdhhdhhdhhdhdhhuhuh
 }
 
 export default Navbarr;
