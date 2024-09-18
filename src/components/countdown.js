@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { targetDates, messages } from '../setting/cd.setting';
 import "../css/countdown.css"
 
-const Countdownt =({targetDate})=>{
-    const calculateTimeLeft = () => {
+const Countdown = ({ targetDate, onComplete, message }) => {
+    const calculateTimeLeft = useCallback(() => {
         const now = new Date();
         const target = new Date(targetDate);
         const difference = +target - +now;
 
         if (difference <= 0) {
+            onComplete();
             return {
                 months: 0,
                 days: 0,
@@ -17,16 +19,13 @@ const Countdownt =({targetDate})=>{
             };
         }
 
-        // Calculate months remaining
         let months = (target.getFullYear() - now.getFullYear()) * 12 + (target.getMonth() - now.getMonth());
 
-        // Adjust if target date's day of the month is earlier in the month
         if (target.getDate() < now.getDate()) {
             months--;
         }
 
-        // Calculate remaining days, hours, minutes, and seconds
-        const timeRemaining = +new Date(targetDate) - +new Date();
+        const timeRemaining = +target - +now;
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24) % 30);
         const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
         const minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
@@ -39,7 +38,7 @@ const Countdownt =({targetDate})=>{
             minutes,
             seconds,
         };
-    };
+    }, [targetDate, onComplete]);
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -48,43 +47,71 @@ const Countdownt =({targetDate})=>{
             setTimeLeft(calculateTimeLeft());
         }, 1000);
 
-        // Clear the interval when the component is unmounted
         return () => clearInterval(timer);
-    }, [targetDate]);
+    }, [calculateTimeLeft]);
 
     return (
-    <div>
-        <h2 className="judul-cd">COUNTDOWN</h2>
+        <div className="cd-body">
+            <div className="countdown-container">
+                <div className="timer">
+                    <div className="timer-item">
+                        <span>{timeLeft.months}</span>
+                        <div>Months</div>
+                    </div>
 
-        <div className="countdown-container">
-            <div className="countdown-item">
-                {timeLeft.months}
-                <span>Bulan</span>
+                    <div className="timer-item">
+                        <span>{timeLeft.days}</span>
+                        <div>Days</div>
+                    </div>
+
+                    <div className="timer-item">
+                        <span>{timeLeft.hours}</span>
+                        <div>Hours</div>
+                    </div>
+
+                    <div className="timer-item">
+                        <span>{timeLeft.minutes}</span>
+                        <div>Minutes</div>
+                    </div>
+
+                    <div className="timer-item">
+                        <span>{timeLeft.seconds}</span>
+                        <div>Seconds</div>
+                    </div>
+                </div>
+                <h2 className="message">{message}</h2>
             </div>
-
-            <div className="countdown-item">
-                {timeLeft.days}
-                <span>Hari</span>
-            </div>
-
-            <div className="countdown-item">
-                {timeLeft.hours}
-                <span>Jam</span>
-           </div>
-
-            <div className="countdown-item">
-                {timeLeft.minutes}
-                <span>Menit</span>
-            </div>
-
-            {/* <div className="countdown-item">
-                {timeLeft.seconds}
-                <span>Detik</span>
-            </div> */}
         </div>
-    </div>
     );
 };
 
+const CountdownWrapper = () => {
+    const [currentTargetIndex, setCurrentTargetIndex] = useState(0);
 
-export default Countdownt;
+    const handleComplete = () => {
+        if (currentTargetIndex + 1 < targetDates.length) {
+            setCurrentTargetIndex((prevIndex) => prevIndex + 1);
+        } else {
+            alert("See You Again In Armaso 2026");
+        }
+    };
+
+    return (
+        <div>
+            <h1>Countdown</h1>
+            {currentTargetIndex < targetDates.length ? (
+                <Countdown 
+                    targetDate={targetDates[currentTargetIndex]} 
+                    onComplete={handleComplete} 
+                    message={messages[currentTargetIndex]}
+                />
+            ) : (
+                <div className="complete-message">
+                    Thank You For Participating In Armaso 2025
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default CountdownWrapper;
