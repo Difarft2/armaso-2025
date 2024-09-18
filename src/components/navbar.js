@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Headroom from 'react-headroom';
 const Navbarr = () => {
     return (
-        <Headroom> {}
+        <Headroom> 
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="/">
@@ -37,7 +37,6 @@ const Navbarr = () => {
             </Navbar>
         </Headroom>
     );
-    // jjjhjjjhdhhdujhdhdhdhhdhhdhhdhdhhuhuh
 }
 
 export default Navbarr;

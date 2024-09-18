@@ -1,84 +1,125 @@
-
-.interactive-timeline-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.steps {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.step-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  margin: 0 10px;
-  text-align: center;
-  max-width: 120px; /* Adjust as needed */
-}
-
-.step-item.active {
-  color: #007bff; /* Change color to indicate active step */
-}
-
-.circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ccc;
-  margin-bottom: 5px;
-}
-
-.step-label {
-  font-size: 14px;
-  font-weight: bold;
-  white-space: normal; /* Allows text to wrap */
-  /* word-break: break-word;  */
-}
-
-.timeline-bar {
-  width: 50%;
-  height: 5px;
-  background-color: #e0e0e0;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.progress {
-  height: 100%;
-  background-color: #007bff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: width 0.3s ease;
-}
-
-.step-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 600px;
+.tl-container {
   width: 100%;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.judul-tl, .judul-title{
   text-align: center;
 }
 
-.step-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.button-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.step-content p {
+button {
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: red;
+  color: #000;
+  border: none;
   font-size: 16px;
-  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.5s ease, color 0.4s ease;
+  -webkit-transition: background-color 0.5s ease, color 0.4s ease;
+  -moz-transition: background-color 0.5s ease, color 0.4s ease;
+  -ms-transition: background-color 0.5s ease, color 0.4s ease;
+  -o-transition: background-color 0.5s ease, color 0.4s ease;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 0;
+  background-color: #ffb300;
+  transition: width 0.4s ease;
+}
+
+button:hover::before,
+button.active::before {
+  width: 50px;
+}
+
+button.active {
+  color: #fff;
+  background-color: red; /* Warna latar belakang tombol aktif menjadi merah */
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button:not(.active) {
+  color: #000;
+  background-color: transparent;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap; /* Flex-wrap untuk membuat kotak lebih fleksibel */
+}
+
+.box {
+  flex: 0 0 400px;
+  border: 2px solid #333;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  height: 150px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.box:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.box:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+/* Media Queries untuk ukuran ponsel */
+@media (max-width: 480px) {
+  .box-container {
+    flex-direction: column; /* Mengubah arah menjadi kolom untuk menumpuk kotak */
+    align-items: center;    /* Kotak ditampilkan di tengah */
+  }
+
+  .box {
+    flex: 0 0 100%;         /* Kotak mengambil lebar penuh pada ponsel */
+    margin: 10px 0;         /* Jarak antar kotak diperbesar secara vertikal */
+  }
+
+  button {
+    padding: 8px 20px;      /* Tombol menjadi lebih kecil pada layar ponsel */
+    font-size: 14px;        /* Ukuran font tombol dikurangi */
+    margin: 5px;            /* Margin antar tombol lebih kecil */
+  }
 }
