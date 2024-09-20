@@ -5,6 +5,9 @@ import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../css/aboutus.css";
 
+import { aboutusp } from '../setting/content';
+import { bukupanduan, syaratdanketentuan } from '../setting/otherlink';
+
 const ExampleCarouselImage = ({ text }) => {
   return (
     <div 
@@ -65,14 +68,14 @@ const ResponsivePage = () => {
 
   return (
     <div className="container-fluid" id='aboutus'>
-      <h1>Do you know Armaso?</h1>
+      <h1 className='judul-au'>Do you know Armaso?</h1>
       <div className="content">
         <div className="carousel-container">
           <UncontrolledExample />
         </div>
         <div className="text-content">
-          <p>
-            ARMASO (Ar-Rahmat Mathematic, Science, and Social Olympiad) ini merupakan olimpiade tingkat SD Sederajat yang diadakan oleh Pondok Pesantren Modern Ar Rahmat Bojonegoro. Melalui ARMASO 2023 diharapkan para siswa sebagai generasi muda penerus bangsa dapat memiliki kompetensi dan kecerdasan dalam memahami isu-isu yang berkaitan dengan Matematika Sains dan Sosial.
+          <p>  
+            {aboutusp}
           </p>
           <div className="buttons">
             <Button variant="secondary" onClick={handleShowModal1}>
@@ -85,7 +88,7 @@ const ResponsivePage = () => {
         </div>
       </div>
 
-      {/* Modal 1 */}
+      {/* syarat dan ketentuan*/}
       <Modal show={showModal1} onHide={handleCloseModal1} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Syarat & Ketentuan</Modal.Title>
@@ -95,13 +98,13 @@ const ResponsivePage = () => {
           <Button variant="secondary" onClick={handleCloseModal1}>
             Close
           </Button>
-          <Button href='https://armaso.arrahmat-bjn.sch.id/mainPage/PDF/SYARAT.pdf' variant="secondary" onClick={handleCloseModal1}>
+          <Button href={syaratdanketentuan} variant="secondary" onClick={handleCloseModal1}>
             Open PDF
           </Button>
         </Modal.Footer>
       </Modal>
 
-      {/* Modal 2 */}
+      {/* buku panduan */}
       <Modal show={showModal2} onHide={handleCloseModal2} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Buku Panduan</Modal.Title>
@@ -111,7 +114,7 @@ const ResponsivePage = () => {
           <Button variant="secondary" onClick={handleCloseModal2}>
             Close
           </Button>
-          <Button href='https://armaso.arrahmat-bjn.sch.id/mainPage/PDF/SYARAT.pdf' variant="secondary" onClick={handleCloseModal1}>
+          <Button href={bukupanduan} variant="secondary" onClick={handleCloseModal1}>
             Open PDF
           </Button>
         </Modal.Footer>
