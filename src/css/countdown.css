@@ -1,6 +1,6 @@
 .cd-body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
+  background-color: transparent;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -11,6 +11,7 @@
 h1 {
   color: #333;
   font-size: 2.5rem;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -29,19 +30,18 @@ h2 {
 }
 
 .countdown-container {
-  background-color: #fff;
+  background-color: rgb(133, 232, 255);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 500px;
-  width: 100%;
   text-align: center;
+  margin: auto; 
 }
 
 .timer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 20px;
@@ -66,13 +66,11 @@ h2 {
   color: #555;
 }
 
-/* Pesan countdown */
 .message {
   font-size: 1.2rem;
   color: #4caf50;
 }
 
-/* Warna dan gaya tombol selesai */
 .complete-message {
   font-size: 1.5rem;
   color: #2e7d32;
@@ -80,4 +78,39 @@ h2 {
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; 
+  }
+
+  h2 {
+    font-size: 1.25rem; 
+  }
+
+  .countdown-container {
+    padding: 15px; 
+    width: 90%; 
+  }
+
+  .timer {
+    flex-wrap: nowrap; 
+  }
+
+  .timer-item {
+    font-size: 1rem; 
+    flex: 1; 
+  }
+
+  .timer-item span {
+    font-size: 1.5rem; 
+  }
+  .message, .complete-message {
+    font-size: 1rem; 
+  }
+
+  .countdown-container{
+    width: 100vw;
+  }
 }

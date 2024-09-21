@@ -1,14 +1,18 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { targetDates, messages } from '../setting/cd.setting';
-import "../css/countdown.css"
+import { targetDate, message, selesai } from '../setting/cd.setting'; 
+import "../css/countdown.css";
 
 const Countdown = ({ targetDate, onComplete, message }) => {
+    const [completed, setCompleted] = useState(false);
+    const [timeLeft, setTimeLeft] = useState({});
+    const [displayMessage, setDisplayMessage] = useState(message); 
     const calculateTimeLeft = useCallback(() => {
         const now = new Date();
         const target = new Date(targetDate);
         const difference = +target - +now;
 
         if (difference <= 0) {
+            setCompleted(true);
             onComplete();
             return {
                 months: 0,
@@ -40,76 +44,102 @@ const Countdown = ({ targetDate, onComplete, message }) => {
         };
     }, [targetDate, onComplete]);
 
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
     useEffect(() => {
         const timer = setInterval(() => {
-            setTimeLeft(calculateTimeLeft());
+            const newTimeLeft = calculateTimeLeft();
+            setTimeLeft(newTimeLeft);
+            if (!completed) {
+            }
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [calculateTimeLeft]);
+    }, [calculateTimeLeft, completed]);
+
+    useEffect(() => {
+        if (completed) {
+            setDisplayMessage(selesai); 
+        }
+    }, [completed]);
 
     return (
         <div className="cd-body">
             <div className="countdown-container">
-                <div className="timer">
-                    <div className="timer-item">
-                        <span>{timeLeft.months}</span>
-                        <div>Months</div>
-                    </div>
+                {!completed ? (
+                    <div className="timer">
+                        <div className="timer-item">
+                            <span>{timeLeft.months}</span>
+                            <div>Months</div>
+                        </div>
 
-                    <div className="timer-item">
-                        <span>{timeLeft.days}</span>
-                        <div>Days</div>
-                    </div>
+                        <div className="timer-item">
+                            <span>{timeLeft.days}</span>
+                            <div>Days</div>
+                        </div>
 
-                    <div className="timer-item">
-                        <span>{timeLeft.hours}</span>
-                        <div>Hours</div>
-                    </div>
+                        <div className="timer-item">
+                            <span>{timeLeft.hours}</span>
+                            <div>Hours</div>
+                        </div>
 
-                    <div className="timer-item">
-                        <span>{timeLeft.minutes}</span>
-                        <div>Minutes</div>
-                    </div>
+                        <div className="timer-item">
+                            <span>{timeLeft.minutes}</span>
+                            <div>Minutes</div>
+                        </div>
 
-                    <div className="timer-item">
-                        <span>{timeLeft.seconds}</span>
-                        <div>Seconds</div>
+                        <div className="timer-item">
+                            <span>{timeLeft.seconds}</span>
+                            <div>Seconds</div>
+                        </div>
+                    </div>
+                ) : (
+                <div className="complete-message">
+                   <div className="timer">
+                        <div className="timer-item">
+                            <span>{timeLeft.months}</span>
+                            <div>Months</div>
+                        </div>
+
+                        <div className="timer-item">
+                            <span>{timeLeft.days}</span>
+                            <div>Days</div>
+                        </div>
+
+                        <div className="timer-item">
+                            <span>{timeLeft.hours}</span>
+                            <div>Hours</div>
+                        </div>
+
+                        <div className="timer-item">
+                            <span>{timeLeft.minutes}</span>
+                            <div>Minutes</div>
+                        </div>
+
+                        <div className="timer-item">
+                            <span>{timeLeft.seconds}</span>
+                            <div>Seconds</div>
+                        </div>
                     </div>
                 </div>
-                <h2 className="message">{message}</h2>
+                )}
+                <h2 className="message">{displayMessage}</h2>  
             </div>
         </div>
     );
 };
 
 const CountdownWrapper = () => {
-    const [currentTargetIndex, setCurrentTargetIndex] = useState(0);
-
     const handleComplete = () => {
-        if (currentTargetIndex + 1 < targetDates.length) {
-            setCurrentTargetIndex((prevIndex) => prevIndex + 1);
-        } else {
-            alert("See You Again In Armaso 2026");
-        }
+
     };
 
     return (
         <div>
-            <h1>Countdown</h1>
-            {currentTargetIndex < targetDates.length ? (
-                <Countdown 
-                    targetDate={targetDates[currentTargetIndex]} 
-                    onComplete={handleComplete} 
-                    message={messages[currentTargetIndex]}
-                />
-            ) : (
-                <div className="complete-message">
-                    Thank You For Participating In Armaso 2025
-                </div>
-            )}
+            <h1>Countdown Armaso 2025</h1>
+            <Countdown 
+                targetDate={targetDate} 
+                onComplete={handleComplete} 
+                message={message}
+            />
         </div>
     );
 };
