@@ -1,0 +1,125 @@
+.tl-container {
+  width: 100%;
+}
+
+.judul-tl, .judul-title{
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: red;
+  color: #000;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.5s ease, color 0.4s ease;
+  -webkit-transition: background-color 0.5s ease, color 0.4s ease;
+  -moz-transition: background-color 0.5s ease, color 0.4s ease;
+  -ms-transition: background-color 0.5s ease, color 0.4s ease;
+  -o-transition: background-color 0.5s ease, color 0.4s ease;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 0;
+  background-color: #ffb300;
+  transition: width 0.4s ease;
+}
+
+button:hover::before,
+button.active::before {
+  width: 50px;
+}
+
+button.active {
+  color: #fff;
+  background-color: red; /* Warna latar belakang tombol aktif menjadi merah */
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button:not(.active) {
+  color: #000;
+  background-color: transparent;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap; /* Flex-wrap untuk membuat kotak lebih fleksibel */
+}
+
+.box {
+  flex: 0 0 400px;
+  border: 2px solid #333;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  height: 150px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.box:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.box:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+/* Media Queries untuk ukuran ponsel */
+@media (max-width: 480px) {
+  .box-container {
+    flex-direction: column; /* Mengubah arah menjadi kolom untuk menumpuk kotak */
+    align-items: center;    /* Kotak ditampilkan di tengah */
+  }
+
+  .box {
+    flex: 0 0 100%;         /* Kotak mengambil lebar penuh pada ponsel */
+    margin: 10px 0;         /* Jarak antar kotak diperbesar secara vertikal */
+  }
+
+  button {
+    padding: 8px 20px;      /* Tombol menjadi lebih kecil pada layar ponsel */
+    font-size: 14px;        /* Ukuran font tombol dikurangi */
+    margin: 5px;            /* Margin antar tombol lebih kecil */
+  }
+}
