@@ -1,5 +1,6 @@
 import React  from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import '../src/css/app.css'
 // import { useEffect } from 'react';
 // import Cookies from 'js-cookie';
 // import {useNavigate } from "react-router-dom";

@@ -68,7 +68,7 @@ const ResponsivePage = () => {
 
   return (
     <div className="container-fluid" id='aboutus'>
-      <h1 className='judul-au'>Do you know Armaso?</h1>
+      <h1 className='judul-au'>Do You Know Armaso?</h1>
       <div className="content">
         <div className="carousel-container">
           <UncontrolledExample />
