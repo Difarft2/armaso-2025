@@ -9,15 +9,21 @@
 .button-container {
   display: flex;
   justify-content: center;
-  background-color: #f8f8f8;
-  padding: 10px;
-  border-radius: 10px;
+  background-color: rgb(179, 214, 214);
+  padding: 5px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  max-width: 600px; 
+  margin: 0 auto;
 }
 
 button {
-  margin: 10px;
-  padding: 10px 30px;
-  background-color: red;
+  margin: 5px;
+  padding: 0px 0px;
+  background-color: rgb(57, 179, 198);
   color: #000;
   border: none;
   font-size: 16px;
@@ -50,7 +56,7 @@ button.active::before {
 
 button.active {
   color: #fff;
-  background-color: red; /* Warna latar belakang tombol aktif menjadi merah */
+  background-color: rgb(57, 179, 198); 
   padding: 10px 30px;
   border-radius: 20px;
   transition: background-color 0.4s ease, color 0.4s ease;
@@ -68,12 +74,12 @@ button:not(.active) {
   margin-top: 20px;
   width: 100%;
   overflow: hidden;
-  flex-wrap: wrap; /* Flex-wrap untuk membuat kotak lebih fleksibel */
+  flex-wrap: wrap; 
 }
 
 .box {
   flex: 0 0 400px;
-  border: 2px solid #333;
+  border: 2px solid #000000;
   margin: 0 10px;
   padding: 20px;
   background-color: #f5f5f5;
@@ -105,21 +111,22 @@ button:not(.active) {
   transition-delay: 0.4s;
 }
 
-/* Media Queries untuk ukuran ponsel */
 @media (max-width: 480px) {
   .box-container {
-    flex-direction: column; /* Mengubah arah menjadi kolom untuk menumpuk kotak */
-    align-items: center;    /* Kotak ditampilkan di tengah */
+    flex-direction: column; 
+    align-items: center;    
   }
 
   .box {
-    flex: 0 0 100%;         /* Kotak mengambil lebar penuh pada ponsel */
-    margin: 10px 0;         /* Jarak antar kotak diperbesar secara vertikal */
+    flex: 0 0 100%;         
+    margin: 10px 0;        
   }
 
   button {
-    padding: 8px 20px;      /* Tombol menjadi lebih kecil pada layar ponsel */
-    font-size: 14px;        /* Ukuran font tombol dikurangi */
-    margin: 5px;            /* Margin antar tombol lebih kecil */
+    padding: 5px 15px;      
+    font-size: 12px;        
+    margin: 5px;            
   }
 }
+
+

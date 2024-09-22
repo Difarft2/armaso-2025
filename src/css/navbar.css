@@ -1,12 +1,24 @@
-
-.navbar {
-  background-color: #f8f9fa !important;
-  padding: 10px 0 !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-  text-align: center !important;
+.logoarmaso{
+  width: 50px;
+  height: 50px;
 }
 
-.navbar .navbar-brand .logo {
+.navbar {
+  background-color:rgba(6, 138, 158, 0.2) ;
+  padding: 10px 0 ;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) ;
+  text-align: center ;
+  position: sticky;
+  z-index: 100;
+}
+
+.nav-container{
+  background-color: rgb(133, 232, 255);
+  position: sticky;
+  z-index: 100;
+}
+
+.navbar .navbar-brand {
   margin-right: 15px;
 }
 
@@ -25,6 +37,10 @@
 
 .navbar-nav .nav-link:hover {
   color: #007bff; 
+}
+
+.nav-link{
+    text-decoration: double;
 }
 
 .button {
