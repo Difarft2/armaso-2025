@@ -1,6 +1,5 @@
-/* Container Footer */
 footer {
-    background-color: #f0f0f0;
+    background-color: rgb(34, 177, 199);
     padding: 20px 0;
     text-align: center;
     border-top: 2px solid #ddd;
@@ -17,7 +16,6 @@ footer {
     padding-bottom: 0;
 }
 
-/* Style untuk teks */
 .CR-container p {
     margin: 0;
     padding: 0;
@@ -25,7 +23,6 @@ footer {
     color: #444;
 }
 
-/* Style untuk Link */
 .CR-container a {
     color: #1a73e8;
     text-decoration: none;
@@ -33,12 +30,10 @@ footer {
     transition: color 0.3s ease;
 }
 
-/* Hover effect pada Link */
 .CR-container a:hover {
     color: #0b56b3;
 }
 
-/* Responsif untuk tampilan lebih kecil */
 @media (max-width: 768px) {
     .CR-container {
         padding: 10px;
@@ -46,7 +41,6 @@ footer {
     }
 }
 
-/* Responsif untuk layar sangat kecil */
 @media (max-width: 480px) {
     .CR-container {
         padding: 5px;
