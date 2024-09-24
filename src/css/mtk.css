@@ -1,0 +1,12 @@
+.mtk-container{
+    background-image: url('../img/background/1-01.png');
+    width: 100wh;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

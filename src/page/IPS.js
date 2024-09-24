@@ -8,9 +8,8 @@ const Ips =()=>{
     return(
         <div>
             <Nav/>
-            <h2>
-                IPS
-            </h2>
+                <div className="ips-container">
+                </div>
             <Copyright/>
         </div>
     )
