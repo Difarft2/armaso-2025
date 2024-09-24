@@ -8,9 +8,8 @@ const Mtk =()=>{
     return(
         <div>
             <Nav/>
-            <h2>
-                MTK
-            </h2>
+                <div className="mtk-container">
+                </div>
             <Copyright/>
         </div>
     )
