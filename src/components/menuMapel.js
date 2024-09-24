@@ -1,20 +1,29 @@
 import "../css/menumapel.css"
 
+import Ipa from "../img/cardMapel/cb1.png"
+
+
+
 const MenuMapel =()=>{
     return(
         <section>
                 <div className="Menu-container" id="menumapel">
                     <div className="IPA-contaiener">
-                        <a href="/Mapel/Ipa"><button className="IPA-button">IPA</button></a>
+                        <a href="/Mapel/Ipa" className="IPA-button">
+                            <img src={Ipa} alt="IPA" className="card" />
+                        </a>
                     </div>
 
                     <div className="IPS-container">
-                        <a href="/Mapel/Ips"><button className="IPS-button">IPS</button></a>
-                        
+                        <a href="/Mapel/Ips" className="IPS-button">
+                            <img src={Ipa} alt="IPS" className="card" />
+                        </a>
                     </div>
 
                     <div className="MTK-container">
-                        <a href="/Mapel/Mtk"><button className="MTK-button">MTK</button></a>
+                        <a href="/Mapel/Mtk" className="MTK-button">
+                            <img src={Ipa} alt="MTK" className="card" />
+                        </a>
                     </div>
                 </div>
         </section>
