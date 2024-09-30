@@ -1,5 +1,5 @@
 import "../css/contactus.css";
-import { Link } from "react-router-dom";
+
 import igIco from "../img/ico/instagram-logo.png";
 import emailico from "../img/ico/email.png";
 import mapico from "../img/ico/map.png";

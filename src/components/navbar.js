@@ -10,7 +10,6 @@ import lgarmaso from "../img/ico/logo armaso.png"
 
 
 const Navbarr = () => {
-
     return (
         <div className="nav-container">
             <Navbar expand="lg" >
@@ -29,7 +28,6 @@ const Navbarr = () => {
                             <Nav.Link href="/#aboutus">About Us</Nav.Link>
                             <Nav.Link href="/#timeline">Time Line</Nav.Link>
                             <Nav.Link href="/#menumapel">Our Competition</Nav.Link>
-                            <Nav.Link href="/#contactus">Contact US</Nav.Link>
                         </Nav>
                         <nav className="button">
                             <Button variant="secondary">Login</Button>{' '}
