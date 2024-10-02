@@ -14,10 +14,10 @@ body, html {
   
   .scrollable-section {
     position: relative;
-    z-index: 1; /* Memastikan komponen berada di atas parallax */
+    z-index: 1; 
     padding: 50px;
-    background-color: white; /* Tambahkan warna latar belakang jika diperlukan */
-    margin-top: -100px; /* Menyelaraskan dengan parallax */
+    background-color: white; 
+    margin-top: -100px; 
   }
   
   section {
