@@ -1,12 +1,13 @@
 .prhome-container {
-    height: 95vh;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: rgb(133, 232, 255);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     display: flex;
+    overflow: hidden;
 }
 
 .border{
@@ -26,7 +27,7 @@
     z-index: 19;
     width: 100%;
     height: 100vh;
-    top: -13vh;
+    top: -8vh;
 }
 
 .grd-img1{
@@ -40,7 +41,7 @@
     width: 100%;
     height: 100vh;
     top: 50vh;
-    top: -16vh;
+    top: -14vh;
 }
 
 .grd-img2{
@@ -53,7 +54,7 @@
     z-index: 17;
     width: 100%;
     height: 100vh;
-    top: -10vh;
+    top: -14vh;
 }
 
 .grd-img3{
@@ -61,28 +62,100 @@
     width: 100%;
 }
 
-.iwak{
+.armaso{
     position: absolute;
+    align-items: center;
     z-index: 16;
     width: 100%;
     height: 100vh;
-    top: -6vh;
+    top: -10vh;
+}
+
+.armaso-img{
+    height: 100vh;
+    width: 103%;
+    animation: moveCastle 5s ease-in-out infinite;
+}
+
+  @keyframes moveCastle {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+.iwak{
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 100vh;
+    top: -8vh;
 }
 
 .iwak-img{
     height: 100vh;
     width: 100%;
+    animation: moveFish 10s linear infinite;
+}
+
+@keyframes moveFish {
+    0% {
+        transform: translateX(0vw);
+        -webkit-transform: translateX(0vw);
+        -moz-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+        -o-transform: translateX(0vw);
+    }
+    25% {
+        transform: translateX(-1vw);
+        -webkit-transform: translateX(-1vw);
+        -moz-transform: translateX(-1vw);
+        -ms-transform: translateX(-1vw);
+        -o-transform: translateX(-1vw);
+    }
+    75% {
+        transform: translateX(1vw);
+        -webkit-transform: translateX(1vw);
+        -moz-transform: translateX(1vw);
+        -ms-transform: translateX(1vw);
+        -o-transform: translateX(1vw);
+}
+    100% {
+        transform: translateX(0vw);
+        -webkit-transform: translateX(0vw);
+        -moz-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+        -o-transform: translateX(0vw);
+}
 }
 
 .kastil{
     position: absolute;
-    z-index: 15;
+    z-index: 14;
     width: 100%;
     height: 100vh;
     top: -7vh;
+    transform: translateY(0);
 }
 
 .kastil-img{
     height: 100vh;
     width: 100%;
+}
+
+.grd1, .grd2, .grd3, .kastil {
+    transform: translateY(0); 
 }

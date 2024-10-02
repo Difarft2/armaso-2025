@@ -1,6 +1,8 @@
 import "../css/menumapel.css"
 
-import Ipa from "../img/cardMapel/cb1.png"
+import Ipa from "../img/cardMapel/Science-01.png"
+import Ips from "../img/cardMapel/Social-01.png"
+import Mtk from "../img/cardMapel/Math-01.png"
 
 
 
@@ -16,13 +18,13 @@ const MenuMapel =()=>{
 
                     <div className="IPS-container">
                         <a href="/Mapel/Ips" className="IPS-button">
-                            <img src={Ipa} alt="IPS" className="card" />
+                            <img src={Ips} alt="IPS" className="card" />
                         </a>
                     </div>
 
                     <div className="MTK-container">
                         <a href="/Mapel/Mtk" className="MTK-button">
-                            <img src={Ipa} alt="MTK" className="card" />
+                            <img src={Mtk} alt="MTK" className="card" />
                         </a>
                     </div>
                 </div>
