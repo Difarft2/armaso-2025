@@ -4,6 +4,9 @@ import "../css/parallax3.css";
 import MenuMapel from "../components/menuMapel";
 import AboutUS from "../components/aboutUS";
 import Timeline from "../components/timeline"
+import FAQ from "../components/faq";
+import Sponsor from "../components/sponsor"
+
 
 const Parallax3 = () => {
     return (
@@ -12,6 +15,8 @@ const Parallax3 = () => {
                 <AboutUS/>
                 <Timeline/>
                 <MenuMapel/>
+                <FAQ/>
+                <Sponsor/>
             </div>
       </div>
     );
