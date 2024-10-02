@@ -1,31 +1,23 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import "../css/home.css";
+import "../css/parallaxhome.css";
 
 import Navbar from "../components/navbar";
 import ContactUS from "../components/contactus";
 import Copyright from "../components/copyright";
 import Parallax3 from "../animation/Parallax3";
 
+import Loading1 from "../animation/loading1";
+import Parallaxhome from "../animation/parallaxHome";
+
 const Home = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    const hash = location.hash;
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
   return (
     <div>
-      <Navbar/>
-      <Parallax3/>
-      <ContactUS />
-      <Copyright />
+      <Loading1>
+        <Navbar/>
+        <Parallaxhome/>
+        <Parallax3/>
+        <ContactUS />
+        <Copyright />
+      </Loading1>
     </div>
   );
 };

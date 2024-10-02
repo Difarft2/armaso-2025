@@ -1,18 +1,18 @@
-notfound-container {
+.notfound-container {
+    background-image: url('../img/background/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f5f5f5;
     height: 100vh;
     width: 100vw;
 }
 
 .notfound-content {
     max-width: 550px;
-    background-color: #fff;
+    background-color: rgb(53, 250, 243, 0.9);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -45,6 +45,9 @@ notfound-container {
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s ease;
 }
 
@@ -52,7 +55,6 @@ notfound-container {
     background-color: #0056b3;
 }
 
-/* Image section for a visual touch */
 .notfound-image img {
     max-width: 50%;
     height: auto;

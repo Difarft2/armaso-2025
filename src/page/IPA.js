@@ -6,13 +6,12 @@ import Nav from "../components/navbar";
 
 const Ipa =()=>{
     return(
-        <div>
-            <Nav/>
-            <h2>
-                IPA
-            </h2>
-            <Copyright/>
-        </div>
+    <div>
+        <Nav/>
+            <div className="ipa-container">
+            </div>
+        <Copyright/>
+    </div>
     )
 }
 
