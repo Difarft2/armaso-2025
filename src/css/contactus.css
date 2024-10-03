@@ -20,7 +20,7 @@ body {
     flex-wrap: wrap;
 }
 
-.whatsapp, .instagram, .other {
+.whatsapp, .mediasosial, .other {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,8 +37,22 @@ body {
     height: 40px;
 }
 
+.ic {
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+    gap: 15px; 
+}
+
+.ic img {
+    width: 30px;
+    height: 30px;
+    top: 20px;
+}
+
 a {
     text-decoration: none;
+    display: inline-block;
     color: black;
     font-size: 18px;
     margin: 5px 0;
