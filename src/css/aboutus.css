@@ -9,9 +9,9 @@ h1, h2{
 }
 
 .modal-content {
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
-  background-color: #f8f9fa;
+  background-color: #76bbff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,8 +100,7 @@ h1 {
   align-items: center;
   background-color: transparent;
   padding: 20px;
-  background-color: rgb(133, 232, 255, 0.8);
-  padding: 20px;
+  background-color: rgb(133, 232, 255, 0.9);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;

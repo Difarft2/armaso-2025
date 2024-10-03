@@ -2,8 +2,14 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
   padding: 0 15px;
+  padding: 50px;
+  background-color: rgba(62, 177, 202, 0.534);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 }
 
 .faq-item {
@@ -19,6 +25,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+}
+
+.pertanyaan, .jawaban {
+  font-size: 14;
 }
 
 .arrow {
@@ -84,5 +94,9 @@
   .faq-answer.show {
     max-height: 500px; 
     padding: 10px 0; 
+  }
+
+  .pertanyaan, .jawaban {
+    font-size: 14;
   }
 }
