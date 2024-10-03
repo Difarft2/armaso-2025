@@ -30,12 +30,14 @@ function TL() {
         >
           Pendaftaran
         </button>
+
         <button
           className={activeButton === 2 ? 'active' : ''}
           onClick={() => handleButtonClick(2)}
         >
           Technical Meeting
         </button>
+
         <button
           className={activeButton === 3 ? 'active' : ''}
           onClick={() => handleButtonClick(3)}

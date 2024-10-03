@@ -1,4 +1,4 @@
-.Menu-container{
+.Menu-container {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -8,7 +8,7 @@
     height: 70vh;
 }
 
-.card {
+.card1, .card2, .card3 {
     width: 220px;
     height: 426px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -17,7 +17,7 @@
     border: 2px solid transparent;
 }
 
-.card:hover {
+.card1:hover, .card2:hover, .card3:hover {
     transform: scale(1.1);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4), 0px 0px 20px 10px rgba(255, 255, 255, 10);
     border: 2px solid rgba(34, 151, 169, 1);
@@ -25,12 +25,32 @@
 
 @media (max-width: 768px) {
     .Menu-container {
-        flex-direction: column; 
-        height: auto; 
+        display: flex;
+        flex-direction: row; 
+        height: auto;
+        overflow-x: scroll; 
+        scroll-snap-type: x mandatory; 
+        gap: 20px; 
+        padding: 10px; 
+        justify-content: flex-start; 
     }
 
-    .card {
-        width: 100%; 
-        height: auto; 
+    .card1, .card2, .card3 {
+        min-width: 270px; 
+        height: auto;
+        scroll-snap-align: center; 
+    }
+
+    .card1:active, .card2:active, .card3:active {
+        transform: scale(1.03);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -o-transform: scale(1.03);
+}
+
+    .Menu-container::-webkit-scrollbar {
+        display: none; 
     }
 }
