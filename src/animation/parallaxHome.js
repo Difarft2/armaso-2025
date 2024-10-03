@@ -9,6 +9,12 @@ import kastil from "../img/AssetWebsite/Castle-01.png";
 import iwak from "../img/AssetWebsite/TopAnimals-01.png";
 import armaso from "../img/AssetWebsite/Tittle-01.png";
 
+// import bobawah2 from "../img/300ppi/Asset 24.png"
+// import ground12 from "../img/300ppi/Asset 25.png";
+// import ground22 from "../img/300ppi/Asset 26.png";
+// import ground32 from "../img/300ppi/Asset 27.png";
+
+
 const Parallaxhome = () => {
     useEffect(() => {
         const handleScroll = () => {
@@ -23,14 +29,12 @@ const Parallaxhome = () => {
             const grd2Translate = scrollPosition * 0.3; 
             const kastilTranslate = scrollPosition * 0.5; 
 
-            
                 armasoElement.style.transform = `translateY(${armasoTranslate}px)`;
-            
-            
+
                 grd1.style.transform = `translateY(${grd1Translate}px)`;
-           
+
                 grd2.style.transform = `translateY(${grd2Translate}px)`;
-            
+
                 kastilElement.style.transform = `translateY(${kastilTranslate}px)`;
             
         };

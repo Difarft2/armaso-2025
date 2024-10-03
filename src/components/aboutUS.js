@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../css/aboutus.css";
 
 import { aboutusp } from '../setting/content';
-import { bukupanduan, syaratdanketentuan } from '../setting/otherlink';
 
 const ExampleCarouselImage = ({ text }) => {
   return (
@@ -31,36 +30,30 @@ const UncontrolledExample = () => {
     <Carousel>
       <Carousel.Item>
         <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p></p>
-        </Carousel.Caption>
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+          </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p></p>
-        </Carousel.Caption>
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+          </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-          </p>
-        </Carousel.Caption>
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+          </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 };
 
 const ResponsivePage = () => {
-  const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
-
-  const handleCloseModal1 = () => setShowModal1(false);
-  const handleShowModal1 = () => setShowModal1(true);
 
   const handleCloseModal2 = () => setShowModal2(false);
   const handleShowModal2 = () => setShowModal2(true);
@@ -68,6 +61,7 @@ const ResponsivePage = () => {
   return (
     <div className="container-fluid" id='aboutus'>
       <h1 className='judul-au'>Do You Know Armaso?</h1>
+
       <div className="content">
         <div className="carousel-container">
           <UncontrolledExample />
@@ -77,44 +71,27 @@ const ResponsivePage = () => {
             {aboutusp}
           </p>
           <div className="buttons">
-            <Button variant="secondary" onClick={handleShowModal1}>
-              Syarat & Ketentuan
-            </Button>{' '}
             <Button variant="secondary" onClick={handleShowModal2}>
-              Buku Panduan
+              Vidio Tutorial
             </Button>
           </div>
         </div>
       </div>
 
-      {/* syarat dan ketentuan*/}
-      <Modal show={showModal1} onHide={handleCloseModal1} animation={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Syarat & Ketentuan</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Syarat & ketentuan akan ditampilkan dalam bentuk PDF. Klik tombol bertuliskan "Open PDF" di bawah untuk membukanya!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal1}>
-            Close
-          </Button>
-          <Button href={syaratdanketentuan} variant="secondary" onClick={handleCloseModal1}>
-            Open PDF
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
-      {/* buku panduan */}
       <Modal show={showModal2} onHide={handleCloseModal2} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Buku Panduan</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Buku panduan akan ditampilkan dalam bentuk PDF. Klik tombol bertuliskan "Open PDF" di bawah untuk membukanya!</Modal.Body>
+
+        <Modal.Body>Vidio Tutorial akan ditampilkan dalam bentuk Vidio. Klik tombol bertuliskan "Vidio" di bawah untuk membukanya! atau Download untuk mendownloadnya dalam bentuk file</Modal.Body>
+
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal2}>
-            Close
+          <Button variant="secondary">
+            Download
           </Button>
-          <Button href={bukupanduan} variant="secondary" onClick={handleCloseModal1}>
-            Open PDF
+
+          <Button variant="secondary">
+            Vidio
           </Button>
         </Modal.Footer>
       </Modal>
