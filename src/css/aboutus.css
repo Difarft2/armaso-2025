@@ -9,7 +9,7 @@ h1, h2{
 }
 
 .modal-content {
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   background-color: #76bbff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
