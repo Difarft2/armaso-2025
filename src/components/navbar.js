@@ -30,8 +30,8 @@ const Navbarr = () => {
                             <Nav.Link href="/#menumapel">Our Competition</Nav.Link>
                         </Nav>
                         <nav className="button">
-                            <Button variant="secondary">Login</Button>{' '}
-                            <Button variant="secondary">Register</Button>{' '}
+                            <a href="url"><Button variant="secondary">Login</Button></a>
+                            <a href="url"><Button variant="secondary">Register</Button></a>
                         </nav>
                     </Navbar.Collapse>
                 </Container>

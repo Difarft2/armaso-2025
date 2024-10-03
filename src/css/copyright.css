@@ -1,6 +1,6 @@
 footer {
-    background-color: rgb(34, 177, 199);
-    padding: 20px 0;
+    background-color: rgb(0, 221, 255);
+    padding: 10px 0;
     text-align: center;
     border-top: 2px solid #ddd;
     margin-bottom: 0;
@@ -10,7 +10,6 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: #333;
     padding-bottom: 0;
@@ -20,18 +19,18 @@ footer {
     margin: 0;
     padding: 0;
     font-weight: 500;
-    color: #444;
+    color: #000000;
 }
 
-.CR-container a {
-    color: #1a73e8;
+.CR-container a, .CR-container span{
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .CR-container a:hover {
-    color: #0b56b3;
+    color: #343b44;
 }
 
 @media (max-width: 768px) {
@@ -46,4 +45,9 @@ footer {
         padding: 5px;
         font-size: 12px;
     }
+
+    .CR-container a:hover {
+        color: #343b44;
+    }
+
 }

@@ -25,14 +25,14 @@ const ContactUS = () => {
           <div className="icon">
             <img src={waico} alt="WhatsApp Logo" />
           </div>
-          <p><a href={wa1}>Adhamara Dwipasha Flavarizki</a></p>
-          <p><a href={wa2}>Rafif Ibrahim Mahfid</a></p>
+          <p><a href={wa1}  target="_blank" rel="noopener noreferrer">Adhamara Dwipasha Flavarizki</a></p>
+          <p><a href={wa2}  target="_blank" rel="noopener noreferrer">Rafif Ibrahim Mahfid</a></p>
         </div>
 
         <div className="other">
           <div className="icon-map">
             <img src={mapico} alt="Map Logo" />
-              <p><a href={lokasi}>
+              <p><a href={lokasi}  target="_blank" rel="noopener noreferrer">
                 PPM Ar Rahmat Bojonegoro
               </a></p>
           </div>
@@ -48,17 +48,17 @@ const ContactUS = () => {
         <div className="mediasosial">
           <div className="ic">
             <img src={igIco} alt="Instagram Logo" />
-            <p><a href={igarmaso}>@armaso_arrahmat</a></p>
+            <p><a href={igarmaso}  target="_blank" rel="noopener noreferrer">@armaso_arrahmat</a></p>
           </div>
 
           <div className="ic">
             <img src={ytico} alt="youtube Logo" />
-            <p><a href={ytarrahmat}>Ar-Rahmat Official</a></p>
+            <p><a href={ytarrahmat}  target="_blank" rel="noopener noreferrer">Ar-Rahmat Official</a></p>
           </div>
 
           <div className="ic">
             <img src={web} alt="website Logo" />
-            <p><a href={webarahmat}>arrahmat-bjn.sch.id</a></p>
+            <p><a href={webarahmat}  target="_blank" rel="noopener noreferrer">arrahmat-bjn.sch.id</a></p>
           </div>
         </div>
       </div>
