@@ -9,11 +9,15 @@ import kastil from "../img/AssetWebsite/Castle-01.png";
 import iwak from "../img/AssetWebsite/TopAnimals-01.png";
 import armaso from "../img/AssetWebsite/Tittle-01.png";
 
-// import bobawah2 from "../img/300ppi/Asset 24.png"
-// import ground12 from "../img/300ppi/Asset 25.png";
-// import ground22 from "../img/300ppi/Asset 26.png";
-// import ground32 from "../img/300ppi/Asset 27.png";
-
+import borderbawah1 from "../img/Fixed/Sorted/Wave-01.png"
+import borderbawah2 from "../img/Fixed/Sorted/Waveside-01.png"
+import bg1 from "../img/Fixed/Sorted/Ground3-01.png"
+import bg2 from "../img/Fixed/Sorted/Ground2.png"
+import bg3 from "../img/Fixed/Sorted/Ground1-01.png"
+import watu from "../img/Fixed/Sorted/Coralsrock-01.png"
+import omah from "../img/Fixed/Sorted/Casle-01.png"
+import atas from "../img/Fixed/Sorted/Top-01.png"
+import jeneng from "../img/Fixed/Sorted/Tittle-01.png"
 
 const Parallaxhome = () => {
     useEffect(() => {
@@ -74,6 +78,43 @@ const Parallaxhome = () => {
 
             <div className="kastil">
                 <img src={kastil} alt="" className="kastil-img" />
+            </div>
+
+                {/* hppppppp */}
+            <div className="borderbawah">
+                <img className="borderbawah-img" src={borderbawah1} alt=""/>
+            </div>
+
+            <div className="bordertengah">
+                <img className="bordertengah-img" src={borderbawah2} alt=""/>
+            </div>
+
+            <div className="bg1">
+                <img className="bg1-img" src={bg1} alt=""/>
+            </div>
+
+            <div className="bg2">
+                <img className="bg2-img" src={bg2} alt=""/>
+            </div>
+
+            <div className="bg3">
+                <img className="bg3-img" src={bg3} alt=""/>
+            </div>
+
+            <div className="watu">
+                <img className="watu-img" src={watu} alt=""/>
+            </div>
+
+            <div className="omah">
+                <img className="omah-img" src={omah} alt=""/>
+            </div>
+
+            <div className="atas">
+                <img className="atas-img" src={atas} alt=""/>
+            </div>
+
+            <div className="jeneng">
+                <img className="jeneng-img" src={jeneng} alt=""/>
             </div>
         </div>
     );
