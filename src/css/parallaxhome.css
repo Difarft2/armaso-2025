@@ -1,3 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .prhome-container {
     height: 100vh;
     width: 100vw;
@@ -8,18 +18,19 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .border{
     width: 100vw;
-    position: relative;
+    position: absolute;
     display: flex;
+    z-index: 21;
 }
 
 .border-img{
     width: 100%;
     position: absolute;
-    z-index: 20;
 }
 
 .grd1{
@@ -160,6 +171,10 @@
     transform: translateY(0); 
 }
 
+/* .borderbawah, .bordertengah, .bg1, .bg2, .bg3, .watu, .atas, .jeneng, .omah{
+    display: none;
+} */
+
 
 @media only screen and (max-width: 768px) {
     .armaso, .border, .grd1, .grd2, .grd3, .iwak, .kastil{
@@ -167,8 +182,130 @@
     }
 
     .prhome-container{
-        background-image: url("../img/300ppi/MobileWeb-01.png");
-        width: 100%vw;
+        background-image: url("../img/Fixed/Sorted/Bg-01.png");
+        width: 100vw;
         height: 100vh;
+    }
+
+    .borderbawah{
+        width: 100vw;
+        position: absolute;
+        top: 100px;
+    }
+
+    .borderbawah-img{
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+    }
+
+    .tambahan{
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        top: 810px;
+        z-index: 19;
+        background-color: rgb(72, 177, 221);
+    }
+
+    .bordertengah{
+        position: absolute;
+        z-index: 19;
+        width: 100%;
+        height: 100vh;
+        top: -90px;
+    }
+
+    .bordertengah-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .bg1{
+        position: absolute;
+        z-index: 18;
+        width: 100%;
+        height: 100vh;
+        top: 630px;
+    }
+
+    .bg1-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .bg2{
+        position: absolute;
+        z-index: 17;
+        width: 100%;
+        height: 100vh;
+        top: 630px;
+    }
+
+    .bg2-img{
+        height: auto;
+        width: 100%;
+    }
+
+    .bg3{
+        position: absolute;
+        z-index: 16;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .bg3-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .watu{
+        position: absolute;
+        z-index: 15;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .watu-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .omah{
+        position: absolute;
+        z-index: 14;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .omah-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .atas{
+        position: absolute;
+        z-index: 14;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .atas-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .jeneng{
+        position: absolute;
+        z-index: 15;
+        width: 100%;
+        height: 100vh;
+        top: -100px;
+    }
+
+    .jeneng-img{
+        height: 100vh;
+        width: 100%;
+        animation: moveCastle 5s ease-in-out infinite;
     }
 }

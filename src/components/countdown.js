@@ -134,7 +134,7 @@ const CountdownWrapper = () => {
 
     return (
         <div>
-            <h1>Countdown Armaso 2025</h1>
+            <h1 className="judul-cd">Countdown Armaso 2025</h1>
             <Countdown 
                 targetDate={targetDate} 
                 onComplete={handleComplete} 

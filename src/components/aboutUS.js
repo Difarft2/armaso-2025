@@ -72,7 +72,7 @@ const ResponsivePage = () => {
           </p>
           <div className="buttons">
             <Button variant="secondary" onClick={handleShowModal2}>
-              Vidio Tutorial
+              Vidio Tutorial Pendaftaran
             </Button>
           </div>
         </div>
@@ -80,7 +80,7 @@ const ResponsivePage = () => {
 
       <Modal show={showModal2} onHide={handleCloseModal2} animation={false}>
         <Modal.Header closeButton>
-          <Modal.Title>Buku Panduan</Modal.Title>
+          <Modal.Title>Vidio Tutorial Pendaftaran</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>Vidio Tutorial akan ditampilkan dalam bentuk Vidio. Klik tombol bertuliskan "Vidio" di bawah untuk membukanya! atau Download untuk mendownloadnya dalam bentuk file</Modal.Body>

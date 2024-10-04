@@ -1,9 +1,15 @@
+h1.judul-mn {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
 .Menu-container {
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 80px;
-    background-color: transparent;
     width: 100%;
     height: 70vh;
 }
@@ -23,17 +29,29 @@
     border: 2px solid rgba(34, 151, 169, 1);
 }
 
+.card-visible {
+    transform: scale(1.15); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(34, 151, 169, 1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
 @media (max-width: 768px) {
     .Menu-container {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         height: auto;
-        overflow-x: scroll; 
-        scroll-snap-type: x mandatory; 
-        gap: 20px; 
-        padding: 10px; 
-        justify-content: flex-start; 
-    }
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 30px;
+        padding: 20px;
+        justify-content: flex-start;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
 
     .card1, .card2, .card3 {
         min-width: 270px; 
@@ -44,11 +62,7 @@
     .card1:active, .card2:active, .card3:active {
         transform: scale(1.03);
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-        -webkit-transform: scale(1.03);
-        -moz-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-        -o-transform: scale(1.03);
-}
+    }
 
     .Menu-container::-webkit-scrollbar {
         display: none; 

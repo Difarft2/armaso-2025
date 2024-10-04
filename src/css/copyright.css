@@ -30,7 +30,7 @@ footer {
 }
 
 .CR-container a:hover {
-    color: #343b44;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -47,7 +47,7 @@ footer {
     }
 
     .CR-container a:hover {
-        color: #343b44;
+        color: #f1f1f1;
     }
 
 }

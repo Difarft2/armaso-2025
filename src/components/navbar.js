@@ -25,13 +25,13 @@ const Navbarr = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/#aboutus">About Us</Nav.Link>
-                            <Nav.Link href="/#timeline">Time Line</Nav.Link>
-                            <Nav.Link href="/#menumapel">Our Competition</Nav.Link>
+                            <p><Nav.Link href="/#aboutus">About Us</Nav.Link></p>
+                            <p><Nav.Link href="/#timeline">Time Line</Nav.Link></p>
+                            <p><Nav.Link href="/#menumapel">Our Competition</Nav.Link></p>
                         </Nav>
                         <nav className="button">
-                            <a href="url"><Button variant="secondary">Login</Button></a>
-                            <a href="url"><Button variant="secondary">Register</Button></a>
+                            <a href="url" target="_blank" rel="noopener noreferrer"><Button variant="secondary">Login</Button></a>
+                            <a href="url" target="_blank" rel="noopener noreferrer"><Button variant="secondary">Register</Button></a>
                         </nav>
                     </Navbar.Collapse>
                 </Container>
