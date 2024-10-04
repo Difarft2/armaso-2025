@@ -31,16 +31,28 @@ const Parallaxhome = () => {
             const armasoTranslate = scrollPosition * 0.7; 
             const grd1Translate = scrollPosition * 0.4; 
             const grd2Translate = scrollPosition * 0.3; 
-            const kastilTranslate = scrollPosition * 0.5; 
+            const kastilTranslate = scrollPosition * 0.5;
 
-                armasoElement.style.transform = `translateY(${armasoTranslate}px)`;
+            armasoElement.style.transform = `translateY(${armasoTranslate}px)`;
+            grd1.style.transform = `translateY(${grd1Translate}px)`;
+            grd2.style.transform = `translateY(${grd2Translate}px)`;
+            kastilElement.style.transform = `translateY(${kastilTranslate}px)`;
 
-                grd1.style.transform = `translateY(${grd1Translate}px)`;
 
-                grd2.style.transform = `translateY(${grd2Translate}px)`;
+            const judul = document.querySelector('.jeneng');
+            const gd1 = document.querySelector('.bg1');
+            const gd2 = document.querySelector('.bg2');
+            const omah = document.querySelector('.omah');
 
-                kastilElement.style.transform = `translateY(${kastilTranslate}px)`;
-            
+            const judulTranslate = scrollPosition * 0.7; 
+            const gd1Translate = scrollPosition * 0.4; 
+            const gd2Translate = scrollPosition * 0.3; 
+            const omahTranslate = scrollPosition * 0.5;  
+
+                judul.style.transform = `translateY(${judulTranslate}px)`;
+                gd1.style.transform = `translateY(${gd1Translate}px)`;
+                gd2.style.transform = `translateY(${gd2Translate}px)`;
+                omah.style.transform = `translateY(${omahTranslate}px)`;
         };
 
         window.addEventListener('scroll', handleScroll);

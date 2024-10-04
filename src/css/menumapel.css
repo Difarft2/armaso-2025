@@ -1,3 +1,10 @@
+h1.judul-mn {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
 .Menu-container {
     justify-content: center;
     align-items: center;
@@ -17,40 +24,46 @@
     border: 2px solid transparent;
 }
 
+/* Efek hover di desktop */
 .card1:hover, .card2:hover, .card3:hover {
     transform: scale(1.1);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4), 0px 0px 20px 10px rgba(255, 255, 255, 10);
     border: 2px solid rgba(34, 151, 169, 1);
 }
 
+/* Efek card terlihat di viewport pada mobile */
+.card-visible {
+    transform: scale(1.15); /* Membesar sedikit */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(34, 151, 169, 1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Gaya untuk mobile */
 @media (max-width: 768px) {
     .Menu-container {
         display: flex;
         flex-direction: row; 
         height: auto;
-        overflow-x: scroll; 
-        scroll-snap-type: x mandatory; 
-        gap: 20px; 
-        padding: 10px; 
+        overflow-x: scroll; /* Scroll horizontal */
+        scroll-snap-type: x mandatory; /* Smooth snapping */
+        gap: 30px;
+        padding: 10px;
         justify-content: flex-start; 
     }
 
     .card1, .card2, .card3 {
         min-width: 270px; 
         height: auto;
-        scroll-snap-align: center; 
+        scroll-snap-align: center; /* Snap ke tengah */
     }
 
     .card1:active, .card2:active, .card3:active {
         transform: scale(1.03);
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-        -webkit-transform: scale(1.03);
-        -moz-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-        -o-transform: scale(1.03);
-}
+    }
 
     .Menu-container::-webkit-scrollbar {
-        display: none; 
+        display: none; /* Hilangkan scrollbar */
     }
 }
