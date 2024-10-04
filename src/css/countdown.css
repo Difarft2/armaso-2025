@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+.judul-cd{
+  font-size: 40px;
+  color: black;
+}
+
 h1 {
   color: #333;
   font-size: 2.5rem;
@@ -30,17 +35,21 @@ h2 {
 
 .countdown-container {
   background-color: rgb(133, 232, 255);
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 40px;
   text-align: center;
-  margin: auto; 
+  margin: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .timer {
   display: flex;
   justify-content: center; 
-  gap: 10px; 
+  gap: 20px; 
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 20px;
@@ -49,7 +58,7 @@ h2 {
 .timer-item {
   background: #ececec;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -89,16 +98,23 @@ h2 {
   }
 
   .countdown-container {
-    padding: 15px; 
-    width: 90%; 
-  }
+    padding: 15px;
+    width: 90%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
 
   .timer {
     flex-wrap: nowrap; 
+    gap: 5px; 
   }
 
   .timer-item {
-    font-size: 1rem; 
+    font-size: 15px; 
+    padding: 15px;
     flex: 1; 
   }
 
@@ -106,7 +122,7 @@ h2 {
     font-size: 1.5rem; 
   }
   .message, .complete-message {
-    font-size: 1rem; 
+    font-size:20px1rem; 
   }
 
   .countdown-container{

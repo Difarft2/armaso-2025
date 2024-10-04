@@ -21,46 +21,77 @@ import jeneng from "../img/Fixed/Sorted/Tittle-01.png"
 
 const Parallaxhome = () => {
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const armasoElement = document.querySelector('.armaso');
-            const grd1 = document.querySelector('.grd1');
-            const grd2 = document.querySelector('.grd2');
-            const kastilElement = document.querySelector('.kastil');
-
-            const armasoTranslate = scrollPosition * 0.7; 
-            const grd1Translate = scrollPosition * 0.4; 
-            const grd2Translate = scrollPosition * 0.3; 
-            const kastilTranslate = scrollPosition * 0.5;
-
+        const debounce = (func, wait = 10, immediate = true) => {
+          let timeout;
+          return function () {
+            const context = this,
+              args = arguments;
+            const later = () => {
+              timeout = null;
+              if (!immediate) func.apply(context, args);
+            };
+            const callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+          };
+        };
+    
+        const handleScroll = debounce(() => {
+          const scrollPosition = window.scrollY;
+          const armasoElement = document.querySelector(".armaso");
+          const grd1 = document.querySelector(".grd1");
+          const grd2 = document.querySelector(".grd2");
+          const kastilElement = document.querySelector(".kastil");
+    
+          const armasoTranslate = scrollPosition * 0.7;
+          const grd1Translate = scrollPosition * 0.4;
+          const grd2Translate = scrollPosition * 0.3;
+          const kastilTranslate = scrollPosition * 0.5;
+    
+          if (armasoElement) {
             armasoElement.style.transform = `translateY(${armasoTranslate}px)`;
+          }
+          if (grd1) {
             grd1.style.transform = `translateY(${grd1Translate}px)`;
+          }
+          if (grd2) {
             grd2.style.transform = `translateY(${grd2Translate}px)`;
+          }
+          if (kastilElement) {
             kastilElement.style.transform = `translateY(${kastilTranslate}px)`;
-
-
-            const judul = document.querySelector('.jeneng');
-            const gd1 = document.querySelector('.bg1');
-            const gd2 = document.querySelector('.bg2');
-            const omah = document.querySelector('.omah');
-
-            const judulTranslate = scrollPosition * 0.7; 
-            const gd1Translate = scrollPosition * 0.4; 
-            const gd2Translate = scrollPosition * 0.3; 
-            const omahTranslate = scrollPosition * 0.5;  
-
-                judul.style.transform = `translateY(${judulTranslate}px)`;
-                gd1.style.transform = `translateY(${gd1Translate}px)`;
-                gd2.style.transform = `translateY(${gd2Translate}px)`;
-                omah.style.transform = `translateY(${omahTranslate}px)`;
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
+          }
+    
+          const judul = document.querySelector(".jeneng");
+          const gd1 = document.querySelector(".bg1");
+          const gd2 = document.querySelector(".bg2");
+          const omah = document.querySelector(".omah");
+    
+          const judulTranslate = scrollPosition * 0.7;
+          const gd1Translate = scrollPosition * 0.4;
+          const gd2Translate = scrollPosition * 0.3;
+          const omahTranslate = scrollPosition * 0.5;
+    
+          if (judul) {
+            judul.style.transform = `translateY(${judulTranslate}px)`;
+          }
+          if (gd1) {
+            gd1.style.transform = `translateY(${gd1Translate}px)`;
+          }
+          if (gd2) {
+            gd2.style.transform = `translateY(${gd2Translate}px)`;
+          }
+          if (omah) {
+            omah.style.transform = `translateY(${omahTranslate}px)`;
+          }
+        }, 10);
+    
+        window.addEventListener("scroll", handleScroll);
+    
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+      }, []);
 
     return (
         <div className="prhome-container">
@@ -93,6 +124,8 @@ const Parallaxhome = () => {
             </div>
 
                 {/* hppppppp */}
+            <div className="tambahan">hgh</div>
+
             <div className="borderbawah">
                 <img className="borderbawah-img" src={borderbawah1} alt=""/>
             </div>

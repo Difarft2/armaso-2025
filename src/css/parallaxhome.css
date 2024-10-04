@@ -1,3 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .prhome-container {
     height: 100vh;
     width: 100vw;
@@ -8,6 +18,7 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .border{
@@ -172,14 +183,14 @@
 
     .prhome-container{
         background-image: url("../img/Fixed/Sorted/Bg-01.png");
-        width: 100%vw;
+        width: 100vw;
         height: 100vh;
     }
 
     .borderbawah{
         width: 100vw;
         position: absolute;
-        top: 185px;
+        top: 100px;
     }
 
     .borderbawah-img{
@@ -188,11 +199,21 @@
         z-index: 20;
     }
 
+    .tambahan{
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        top: 810px;
+        z-index: 19;
+        background-color: rgb(72, 177, 221);
+    }
+
     .bordertengah{
         position: absolute;
         z-index: 19;
         width: 100%;
         height: 100vh;
+        top: -90px;
     }
 
     .bordertengah-img{
@@ -205,6 +226,7 @@
         z-index: 18;
         width: 100%;
         height: 100vh;
+        top: 630px;
     }
 
     .bg1-img{
@@ -278,6 +300,7 @@
         z-index: 15;
         width: 100%;
         height: 100vh;
+        top: -100px;
     }
 
     .jeneng-img{

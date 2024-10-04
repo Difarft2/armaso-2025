@@ -3,7 +3,12 @@
 }
 
 .judul-tl, .judul-title{
+  color: #000;
   text-align: center;
+}
+
+.judul-tl{
+  font-size: 40px;
 }
 
 .button-container {
@@ -26,7 +31,7 @@ button {
   background-color: rgb(57, 179, 198);
   color: #000;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -75,6 +80,7 @@ button:not(.active) {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0;
   height: 150px;
+  width: 390px;
   transform: scaleX(0);
   transform-origin: left;
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
@@ -112,8 +118,12 @@ button:not(.active) {
 
   button {
     padding: 5px 15px;      
-    font-size: 12px;        
+    font-size: 15px;        
     margin: 5px;            
+  }
+
+  p{
+    font-size: 20px;
   }
 }
 

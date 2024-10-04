@@ -19,7 +19,7 @@ import { mail } from "../setting/otherlink";
 const ContactUS = () => {
   return (
     <div id="/#contactus">
-      <h1>Contact Us</h1> 
+      <h1 className="judul-ct">Contact Us</h1> 
       <div className="container-contact-us">
         <div className="whatsapp">
           <div className="icon">

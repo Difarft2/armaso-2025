@@ -51,7 +51,7 @@ function ShapeExample() {
   return (
     <Container fluid>
       <Row>
-        <h1>Ocean Sponsor</h1>
+        <h1 className="judul-os">Ocean Sponsor</h1>
         <Col xs={12} sm={6} md={3}>
           <Image
             // src={img1}

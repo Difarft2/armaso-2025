@@ -4,7 +4,7 @@ export const data = {
     { title: 'Penutupan Pendaftaran', date: '15 Januari 2025', location: 'Online/Offline(PPM Ar Rahmat)' }
   ],
   tab2: [
-    { title: 'Technical Meeting', date: 'Januari 2025', location: 'Online' },
+    { title: 'Technical Meeting', date: '-', location: 'Online' },
     { title: 'Daftar Ulang', date: '25 Januari 2025', location: 'Offline(PPM Ar Rahmat)' }
   ],
   tab3: [
