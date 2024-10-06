@@ -181,31 +181,17 @@ body {
         display: none;
     }
 
-    .prhome-container{
-        background-image: url("../img/Fixed/Sorted/Bg-01.png");
-        width: 100vw;
-        height: 100vh;
-    }
-
     .borderbawah{
         width: 100vw;
         position: absolute;
-        top: 100px;
+
+        top: 270px;
     }
 
     .borderbawah-img{
         width: 100%;
         position: absolute;
         z-index: 20;
-    }
-
-    .tambahan{
-        width: 100%;
-        height: 130px;
-        position: absolute;
-        top: 810px;
-        z-index: 19;
-        background-color: rgb(72, 177, 221);
     }
 
     .bordertengah{
@@ -285,6 +271,7 @@ body {
 
     .atas{
         position: absolute;
+        top: 0px;
         z-index: 14;
         width: 100%;
         height: 100vh;

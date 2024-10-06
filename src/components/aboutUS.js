@@ -7,46 +7,58 @@ import "../css/aboutus.css";
 
 import { aboutusp } from '../setting/content';
 
-const ExampleCarouselImage = ({ text }) => {
-  return (
-    <div 
-      style={{
-        height: '300px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'black',
-        color: 'white',
-        fontSize: '24px'
-      }}
-    >
-      {text}
-    </div>
-  );
-};
+import gbr1 from "../img/aboutus/12.jpg"
+import gbr2 from "../img/aboutus/22.jpg"
+import gbr3 from "../img/aboutus/2.jpg"
+import gbr4 from "../img/aboutus/4.jpg"
+import gbr5 from "../img/aboutus/5.jpg"
 
 const UncontrolledExample = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-          </Carousel.Caption>
+      <img
+          className="d-block w-100"
+          src={gbr1}  
+          alt="First slide"
+          style={{ height: '300px', objectFit: 'cover', opacity:'0.5'}} 
+        />
       </Carousel.Item>
 
       <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-          </Carousel.Caption>
+      <img
+          className="d-block w-100"
+          src={gbr2}  
+          alt="First slide"
+          style={{ height: '300px', objectFit: 'cover', opacity:'0.5' }} 
+        />
       </Carousel.Item>
 
       <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-          </Carousel.Caption>
+      <img
+          className="d-block w-100"
+          src={gbr3}  
+          alt="First slide"
+          style={{ height: '300px', objectFit: 'cover', opacity:'0.5' }} 
+        />
+      </Carousel.Item>
+
+      <Carousel.Item>
+      <img
+          className="d-block w-100"
+          src={gbr4}  
+          alt="First slide"
+          style={{ height: '300px', objectFit: 'cover', opacity:'0.5' }} 
+        />
+      </Carousel.Item>
+
+      <Carousel.Item>
+      <img
+          className="d-block w-100"
+          src={gbr5}  
+          alt="First slide"
+          style={{ height: '300px', objectFit: 'cover', opacity:'0.5' }} 
+        />
       </Carousel.Item>
     </Carousel>
   );

@@ -7,10 +7,9 @@ import ground2 from "../img/AssetWebsite/Ground2-01.png";
 import ground3 from "../img/AssetWebsite/Ground3-01.png";
 import kastil from "../img/AssetWebsite/Castle-01.png";
 import iwak from "../img/AssetWebsite/TopAnimals-01.png";
-import armaso from "../img/AssetWebsite/Tittle-01.png";
+import armaso from "../img/AssetWebsite/yanto.png";
 
-import borderbawah1 from "../img/Fixed/Sorted/Wave-01.png"
-import borderbawah2 from "../img/Fixed/Sorted/Waveside-01.png"
+import borderbawah1 from "../img/Fixed/Sorted/Fole-01.png"
 import bg1 from "../img/Fixed/Sorted/Ground3-01.png"
 import bg2 from "../img/Fixed/Sorted/Ground2.png"
 import bg3 from "../img/Fixed/Sorted/Ground1-01.png"
@@ -124,14 +123,8 @@ const Parallaxhome = () => {
             </div>
 
                 {/* hppppppp */}
-            <div className="tambahan">hgh</div>
-
             <div className="borderbawah">
                 <img className="borderbawah-img" src={borderbawah1} alt=""/>
-            </div>
-
-            <div className="bordertengah">
-                <img className="bordertengah-img" src={borderbawah2} alt=""/>
             </div>
 
             <div className="bg1">
