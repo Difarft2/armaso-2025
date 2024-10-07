@@ -98,7 +98,7 @@ const Parallaxhome = () => {
                 <img src={armaso} alt="armaso" className="armaso-img" />
             </div>
 
-            <div className="border">
+            <div className="border"> 
                 <img src={bobawah} alt="" className="border-img" />
             </div>
 

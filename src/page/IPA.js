@@ -1,6 +1,9 @@
 import "../css/ipa.css"
-import React from "react";
-import "../css/navbar.css"
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Copyright from "../components/copyright";
 import ContactUS from "../components/contactus"
 import Nav from "../components/navbar";
@@ -30,6 +33,10 @@ import bupanhp from "../img/pretelan/img1.png";
 
 
 const Ipa =()=>{
+    const [showModal2, setShowModal2] = useState(false);
+
+    const handleCloseModal2 = () => setShowModal2(false);
+    const handleShowModal2 = () => setShowModal2(true);
     return(
     <div>
 
@@ -60,8 +67,9 @@ const Ipa =()=>{
         <img className="text-keterangan" src={textcomment} alt="" />
     </div>
     <div className="tombol">
-        <img className="daftar" src={btdaftar} alt="" />
-        <img className="bupan" src={btbupan} alt="" />
+            <img className="daftar" src={btdaftar} alt="" />
+            <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2}/>
+        
     </div> 
     </div>
     </div>
@@ -82,8 +90,9 @@ const Ipa =()=>{
         <img className="science-hp" src={sciencehp} alt="" />
         <img className="text-science" src={tulisanneipa} alt="" />
         <div className="tombol-hp">
+
             <img className="daftar-ipa-hp" src={daftarhp} alt="" />
-            <img className="bupan-ipa-hp" src={bupanhp} alt="" />
+            <img className="bupan-ipa-hp" src={bupanhp} alt="" onClick={handleShowModal2}/>
         </div>
     </div>
 
@@ -92,6 +101,24 @@ const Ipa =()=>{
     </div>
         <ContactUS/>
         <Copyright/>
+
+        <Modal show={showModal2} onHide={handleCloseModal2} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>Buku Panduan</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>Buku Panduan akan ditampilkan dalam bentuk PDF. Klik tombol bertuliskan "PDF" di bawah untuk membukanya! atau Download untuk mendownloadnya dalam bentuk file</Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary">
+            Download
+          </Button>
+
+          <Button variant="secondary">
+            PDF
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
     )
 }

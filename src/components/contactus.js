@@ -25,8 +25,8 @@ const ContactUS = () => {
           <div className="icon">
             <img src={waico} alt="WhatsApp Logo" />
           </div>
-          <p><a href={wa1}  target="_blank" rel="noopener noreferrer">Adhamara Dwipasha Flavarizki</a></p>
-          <p><a href={wa2}  target="_blank" rel="noopener noreferrer">Rafif Ibrahim Mahfid</a></p>
+          <p><a href={wa1}  target="_blank" rel="noopener noreferrer">+6281234604006 (Adhamara)</a></p>
+          <p><a href={wa2}  target="_blank" rel="noopener noreferrer">+6283847049148(Rafif)</a></p>
         </div>
 
         <div className="other">
