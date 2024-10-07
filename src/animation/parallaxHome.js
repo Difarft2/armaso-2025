@@ -7,7 +7,7 @@ import ground2 from "../img/AssetWebsite/Ground2-01.png";
 import ground3 from "../img/AssetWebsite/Ground3-01.png";
 import kastil from "../img/AssetWebsite/Castle-01.png";
 import iwak from "../img/AssetWebsite/TopAnimals-01.png";
-import armaso from "../img/AssetWebsite/yanto.png";
+import armaso from "../img/AssetWebsite/armasojeneng.png";
 
 import borderbawah1 from "../img/Fixed/Sorted/Fole-01.png"
 import bg1 from "../img/Fixed/Sorted/Ground3-01.png"
@@ -95,6 +95,7 @@ const Parallaxhome = () => {
     return (
         <div className="prhome-container">
             <div className="armaso">
+                <img src={armaso} alt="armaso" className="armaso-img" />
                 <img src={armaso} alt="armaso" className="armaso-img" />
             </div>
 

@@ -18,3 +18,7 @@ export const igoppra = "https://www.instagram.com/oppra_arrahmat/"
 export const igarmaso = "https://www.instagram.com/armaso_arrahmat/"
 export const igarrahmat = "https://www.instagram.com/arrahmat_bjn/"
 export const ytarrahmat = "https://www.youtube.com/@ArRahmatOfficial"
+
+//daftar
+export const register = "url"
+export const login = "url"

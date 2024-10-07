@@ -113,23 +113,6 @@ img {
     left: 4vw;
     width: 30vw;
     height: auto;
-    animation-name: armaso;
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes armaso {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .text-science {
@@ -159,18 +142,18 @@ img {
 .bupan {
     width: 10%;
     height: auto;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .daftar {
     width: 10%;
     height: auto;
-    z-index: 100;
+    z-index: 1000;
 }
 
 
 @media (max-width: 960px) {
-    .pretelan-desktop {
+    .pretelan-desktop{
         display: none;
     }
 
@@ -192,7 +175,7 @@ img {
     }
 
     .bawah-hp2{
-        z-index: 1000;
+        z-index: 100;
     }
 
     .karang-hp{
@@ -255,6 +238,7 @@ img {
     .tombol-hp {
         display: flex;
         position: absolute;
+        z-index: 1000;
         top: 360px;
         gap: 8vw;
         transform: translateY(-5vh);
@@ -267,11 +251,12 @@ img {
     .daftar-ipa-hp {
         max-width: 30vw;
         height: auto;
+        cursor: pointer;
     }
 
     .bupan-ipa-hp {
         max-width: 30vw;
         height: auto;
+        cursor: pointer;
     }
-
 }

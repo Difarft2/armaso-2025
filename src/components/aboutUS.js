@@ -98,13 +98,17 @@ const ResponsivePage = () => {
         <Modal.Body>Vidio Tutorial akan ditampilkan dalam bentuk Vidio. Klik tombol bertuliskan "Vidio" di bawah untuk membukanya! atau Download untuk mendownloadnya dalam bentuk file</Modal.Body>
 
         <Modal.Footer>
+        <a href="url" target="_blank" rel="noopener noreferrer">
           <Button variant="secondary">
             Download
           </Button>
+        </a>
 
+        <a href="url" target="_blank" rel="noopener noreferrer">
           <Button variant="secondary">
             Vidio
           </Button>
+        </a>
         </Modal.Footer>
       </Modal>
     </div>

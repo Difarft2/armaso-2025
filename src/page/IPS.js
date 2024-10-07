@@ -29,6 +29,8 @@ import socialhp from "../img/pretelan/7.png";
 import tulisanneips from "../img/pretelan/tulisananehanehips.png";
 import daftarhp from "../img/pretelan/img2.png";
 import bupanhp from "../img/pretelan/img1.png"
+import Loading1 from "../animation/loading1";
+import { register } from "../setting/otherlink";
 
 const Ips =()=>{
     const [showModal2, setShowModal2] = useState(false);
@@ -37,6 +39,7 @@ const Ips =()=>{
     const handleShowModal2 = () => setShowModal2(true);
     return(
         <div>
+          <Loading1>
 
     <Nav/>
 
@@ -64,9 +67,9 @@ const Ips =()=>{
         <img className="text-social" src={textsocial} alt="" />
         <img className="text-keterangan-ips" src={textcommentsocial} alt="" />
     </div>
-    <div className="tombol">
-        <img className="daftar" src={btdaftar} alt="" />
-        <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2}/>
+      <div className="tombol">
+    <img className="daftar" src={btdaftar} alt=""   onClick={() => window.open(register, '_blank')}/>
+    <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2}/>
     </div> 
     </div>
     </div>
@@ -87,10 +90,10 @@ const Ips =()=>{
         <img className="social-hp" src={socialhp} alt="" />
         <img className="text-social-hp" src={tulisanneips} alt="" />
         <div className="tombol-hp">
-            <img className="daftar-hp" src={daftarhp} alt="" />
-            <img className="bupan-hp" src={bupanhp} alt="" onClick={handleShowModal2}/>
+        <img className="daftar-ips-hp" src={daftarhp} alt="" onClick={() => window.open(register, '_blank')}/>
+        <img className="bupan-ips-hp" src={bupanhp} alt="" onClick={handleShowModal2}/>
         </div>
-    </div>
+      </div>
 
     </div>
             
@@ -106,15 +109,20 @@ const Ips =()=>{
         <Modal.Body>Buku Panduan akan ditampilkan dalam bentuk PDF. Klik tombol bertuliskan "PDF" di bawah untuk membukanya! atau Download untuk mendownloadnya dalam bentuk file</Modal.Body>
 
         <Modal.Footer>
+        <a href="url" target="_blank" rel="noopener noreferrer">
           <Button variant="secondary">
             Download
           </Button>
+        </a>
 
+        <a href="url" target="_blank" rel="noopener noreferrer">
           <Button variant="secondary">
             PDF
           </Button>
+        </a>
         </Modal.Footer>
       </Modal>
+      </Loading1>
     </div>
     )
 }

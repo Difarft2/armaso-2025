@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 import lgarmaso from "../img/ico/logo armaso.png"
+import { register, login } from "../setting/otherlink";
 
 
 const Navbarr = () => {
@@ -30,8 +31,8 @@ const Navbarr = () => {
                             <p><Nav.Link href="/#menumapel">Our Competition</Nav.Link></p>
                         </Nav>
                         <nav className="button">
-                            <a href="url" target="_blank" rel="noopener noreferrer"><Button variant="secondary">Login</Button></a>
-                            <a href="url" target="_blank" rel="noopener noreferrer"><Button variant="secondary">Register</Button></a>
+                            <a href={login} target="_blank" rel="noopener noreferrer"><Button variant="secondary">Login</Button></a>
+                            <a href={register} target="_blank" rel="noopener noreferrer"><Button variant="secondary">Register</Button></a>
                         </nav>
                     </Navbar.Collapse>
                 </Container>

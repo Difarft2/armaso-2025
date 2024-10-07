@@ -27,7 +27,7 @@ const Loading1 = ({ children }) => {
             left: 0,
             width: "100%",
             height: "100%",
-            zIndex: 1000, 
+            zIndex: 100000, 
             overflow: "hidden",
           }}
         >

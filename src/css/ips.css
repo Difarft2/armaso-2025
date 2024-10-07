@@ -168,7 +168,6 @@ img {
     z-index: 100;
 }
 
-
 @media (max-width: 960px) {
     .pretelan-desktop {
         display: none;
@@ -244,17 +243,18 @@ img {
     }
 
     .text-social-hp {
-        /* max-width: 70vw !important; */
-        width: 87% !important;
+        max-width: 70vw ;
+        width: 100vw ;
         height: auto;
         top: 27vh;
         position: absolute;
-        left: 8vw;
+        left: 15vw;
     }
 
     .tombol-hp {
         display: flex;
         position: absolute;
+        z-index: 1000;
         top: 360px;
         gap: 8vw;
         transform: translateY(-5vh);
@@ -264,14 +264,16 @@ img {
         -o-transform: translateY(-5vh);
 }
 
-    .daftar-hp {
+    .daftar-ips-hp {
         max-width: 30vw;
         height: auto;
+        cursor: pointer;
     }
 
-    .bupan-hp {
+    .bupan-ips-hp {
         max-width: 30vw;
         height: auto;
+        cursor: pointer;
     }
 
 }

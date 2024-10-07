@@ -76,16 +76,16 @@ body {
 .armaso{
     position: absolute;
     align-items: center;
-    z-index: 16;
-    width: 100%;
+    z-index: 16 !important;
+    width: 100vw;
     height: 100vh;
-    top: -10vh;
+    top: -15px;
 }
 
 .armaso-img{
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     animation: moveCastle 5s ease-in-out infinite;
 }
 
