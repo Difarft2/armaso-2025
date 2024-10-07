@@ -3,8 +3,8 @@ export const bukupanduan = "https://armaso.arrahmat-bjn.sch.id/mainPage/PDF/SYAR
 export const syaratdanketentuan = "https://armaso.arrahmat-bjn.sch.id/mainPage/PDF/SYARAT.pdf"
 
 //link wa
-export const wa1 = ""
-export const wa2 = ""
+export const wa1 = "https://api.whatsapp.com/send/?phone=6281234604006&text=Chat+open+by+https%3A%2F%2Fwhatsappdialer.otutom.com%2Fen%2F&type=phone_number&app_absent=0"
+export const wa2 = "https://api.whatsapp.com/send/?phone=6283847049148&text=Chat+open+by+https%3A%2F%2Fwhatsappdialer.otutom.com%2Fen%2F&type=phone_number&app_absent=0"
 
 //other
 export const webarahmat = "https://arrahmat-bjn.sch.id/"
