@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import "../css/home.css";
-
 import Navbar from "../components/navbar";
 import Copyright from "../components/copyright";
-
 import Loading1 from "../animation/loading1";
 import Parallaxhome from "../animation/parallaxHome";
 
-import MenuMapel from "../components/menuMapel";
-import AboutUS from "../components/aboutUS";
-import Timeline from "../components/timeline";
-import FAQ from "../components/faq";
-import Sponsor from "../components/sponsor";
-import ContactUS from "../components/contactus";
+const MenuMapel = lazy(() => import("../components/menuMapel"));
+const AboutUS = lazy(() => import("../components/aboutUS"));
+const Timeline = lazy(() => import("../components/timeline"));
+const FAQ = lazy(() => import("../components/faq"));
+const Sponsor = lazy(() => import("../components/sponsor"));
+const ContactUS = lazy(() => import("../components/contactus"));
 
 const Home = () => {
   return (
@@ -25,15 +23,19 @@ const Home = () => {
         </div>
 
         <div className="main-content">
-          <AboutUS />
-          <Timeline />
-          <MenuMapel />
-          <FAQ />
-          <Sponsor />
+          <Suspense fallback={<div>Memuat...</div>}>
+            <AboutUS />
+            <Timeline />
+            <MenuMapel />
+            <FAQ />
+            <Sponsor />
+          </Suspense>
         </div>
 
         <div className="contact-section">
-          <ContactUS />
+          <Suspense fallback={<div>Memuat Kontak...</div>}>
+            <ContactUS />
+          </Suspense>
         </div>
 
         <Copyright />

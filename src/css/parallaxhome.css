@@ -8,7 +8,19 @@ body {
     overflow-x: hidden;
 }
 
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.prhome-container:not(.hidden) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+ 
+
 .prhome-container {
+    will-change: scroll-position;
     height: 100vh;
     width: 100vw;
     background-color: rgb(133, 232, 255);
@@ -79,17 +91,24 @@ body {
     z-index: 16 !important;
     width: 100vw;
     height: 100vh;
-    top: -15px;
+    top: 0px;
 }
 
-.armaso-img{
+.armaso-img {
+    top: -0px;
     align-items: center;
     height: 100vh;
     width: 100vw;
-    animation: moveCastle 5s ease-in-out infinite;
+    /* animation: moveCastle 5s ease-in-out infinite;
+    -webkit-animation: moveCastle 5s ease-in-out infinite; */
 }
 
-  @keyframes moveCastle {
+/* .armaso-img.stop-animation {
+    animation: none;
+    -webkit-animation: none;
+} */
+
+/* @keyframes moveCastle {
     0% {
         transform: translateY(0); 
     }
@@ -107,7 +126,7 @@ body {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
     }
-}
+} */
 
 .iwak{
     position: absolute;
@@ -120,10 +139,11 @@ body {
 .iwak-img{
     height: 100vh;
     width: 100%;
-    animation: moveFish 10s linear infinite;
+    /* animation: moveFish 10s linear infinite;
+    -webkit-animation: moveFish 10s linear infinite; */
 }
 
-@keyframes moveFish {
+/* @keyframes moveFish {
     0% {
         transform: translateX(0vw);
         -webkit-transform: translateX(0vw);
@@ -152,7 +172,7 @@ body {
         -ms-transform: translateX(0vw);
         -o-transform: translateX(0vw);
 }
-}
+} */
 
 .kastil{
     position: absolute;
@@ -181,7 +201,7 @@ body {
     .armaso, .border, .grd1, .grd2, .grd3, .iwak, .kastil{
         display: none;
     }
-
+    
     .borderbawah{
         width: 100vw;
         position: absolute;

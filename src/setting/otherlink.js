@@ -20,5 +20,6 @@ export const igarrahmat = "https://www.instagram.com/arrahmat_bjn/"
 export const ytarrahmat = "https://www.youtube.com/@ArRahmatOfficial"
 
 //daftar
-export const register = "url"
-export const login = "url"
+export const register = "https://armaso.arrahmat-bjn.sch.id/pendaftaran.php"
+export const login = "https://armaso.arrahmat-bjn.sch.id/login.php"
+export const pengumuman = "https://armaso.arrahmat-bjn.sch.id/pengumuman.php"

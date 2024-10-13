@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 import lgarmaso from "../img/ico/logo armaso.png"
-import { register, login } from "../setting/otherlink";
+import { register, login, pengumuman } from "../setting/otherlink";
 
 
 const Navbarr = () => {
@@ -28,11 +28,12 @@ const Navbarr = () => {
                         <Nav className="me-auto">
                             <p><Nav.Link href="/#aboutus">About Us</Nav.Link></p>
                             <p><Nav.Link href="/#timeline">Time Line</Nav.Link></p>
-                            <p><Nav.Link href="/#menumapel">Our Competition</Nav.Link></p>
+                            <p><Nav.Link href="/#menumapel">Kompetisi</Nav.Link></p>
+                            <p><Nav.Link href={pengumuman} target="_blank" rel="noopener noreferrer">Pengumuman</Nav.Link></p>
                         </Nav>
                         <nav className="button">
                             <a href={login} target="_blank" rel="noopener noreferrer"><Button variant="secondary">Login</Button></a>
-                            <a href={register} target="_blank" rel="noopener noreferrer"><Button variant="secondary">Register</Button></a>
+                            <a href={register} target="_blank" rel="noopener noreferrer"><Button variant="secondary">Daftar</Button></a>
                         </nav>
                     </Navbar.Collapse>
                 </Container>
