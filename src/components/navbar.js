@@ -1,5 +1,6 @@
 import "../css/navbar.css";
 import React from "react";
+import Headroom from "react-headroom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -12,7 +13,9 @@ import { register, login, pengumuman } from "../setting/otherlink";
 
 const Navbarr = () => {
     return (
+        <Headroom>
         <div className="nav-container">
+            
             <Navbar expand="lg" >
                 <Container>
                     <Navbar.Brand href="/">
@@ -39,6 +42,7 @@ const Navbarr = () => {
                 </Container>
             </Navbar>
         </div>
+        </Headroom>
     );
 }
 

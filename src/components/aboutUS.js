@@ -6,12 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../css/aboutus.css";
 
 import { aboutusp } from '../setting/content';
+import { tutorial } from '../setting/otherlink';
 
 import gbr1 from "../img/aboutus/12.jpg"
 import gbr2 from "../img/aboutus/22.jpg"
 import gbr3 from "../img/aboutus/2.jpg"
 import gbr4 from "../img/aboutus/4.jpg"
 import gbr5 from "../img/aboutus/5.jpg"
+
 
 const UncontrolledExample = () => {
   return (
@@ -71,7 +73,8 @@ const ResponsivePage = () => {
   const handleShowModal2 = () => setShowModal2(true);
 
   return (
-    <div className="container-fluid" id='aboutus'>
+    
+    <div className="aboutus-container-fluid" id='aboutus'>
       <h1 className='judul-au'>Do You Know Armaso?</h1>
 
       <div className="content">
@@ -84,7 +87,7 @@ const ResponsivePage = () => {
           </p>
           <div className="buttons">
             <Button variant="secondary" onClick={handleShowModal2}>
-              Vidio Tutorial Pendaftaran
+              Video Tutorial Pendaftaran
             </Button>
           </div>
         </div>
@@ -92,21 +95,15 @@ const ResponsivePage = () => {
 
       <Modal show={showModal2} onHide={handleCloseModal2} animation={false}>
         <Modal.Header closeButton>
-          <Modal.Title>Vidio Tutorial Pendaftaran</Modal.Title>
+          <Modal.Title>Video Tutorial Pendaftaran</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body>Vidio Tutorial akan ditampilkan dalam bentuk Vidio. Klik tombol bertuliskan "Vidio" di bawah untuk membukanya! atau Download untuk mendownloadnya dalam bentuk file</Modal.Body>
+        <Modal.Body>Video tutorial dapat ditonton dengan mengklik tombol bertuliskan 'Open' di bawah untuk membuka dan melihatnya secara langsung!</Modal.Body>
 
         <Modal.Footer>
-        <a href="url" target="_blank" rel="noopener noreferrer">
+        <a href={tutorial} target="_blank" rel="noopener noreferrer">
           <Button variant="secondary">
-            Download
-          </Button>
-        </a>
-
-        <a href="url" target="_blank" rel="noopener noreferrer">
-          <Button variant="secondary">
-            Vidio
+            Open
           </Button>
         </a>
         </Modal.Footer>

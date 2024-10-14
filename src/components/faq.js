@@ -14,21 +14,23 @@ const FAQ = () => {
   };
 
   return (
-  <>
-    <h1 className="judul-faq">Frequently Asked Question</h1>
-      <div className="faq-container">
-        {faqs.map((faq, index) => (
-          <div className="faq-item" key={index}>
-            <div className="faq-question" onClick={() => toggleFAQ(index)}>
-              <p className='pertanyaan'>{faq.question}</p>
-              <span className={`arrow ${activeIndex === index ? 'open' : ''}`}>▼</span>
-            </div>
+    <>
+      <h1 className="judul-faq">Frequently Asked Question</h1>
+      <div className="row">
+        <div className="col-12 faq-container-fluid">
+          {faqs.map((faq, index) => (
+            <div className="faq-item" key={index}>
+              <div className="faq-question" onClick={() => toggleFAQ(index)}>
+                <p className='pertanyaan'>{faq.question}</p>
+                <span className={`arrow ${activeIndex === index ? 'open' : ''}`}>▼</span>
+              </div>
 
-            <div className={`faq-answer ${activeIndex === index ? 'show' : ''}`}>
-              <p className='jawaban'>{faq.answer}</p>
+              <div className={`faq-answer ${activeIndex === index ? 'show' : ''}`}>
+                <p className='jawaban'>{faq.answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

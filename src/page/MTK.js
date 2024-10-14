@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from "../components/navbar";
 import Copyright from "../components/copyright";
 import ContactUS from "../components/contactus";
+import Loading1 from "../animation/loading1";
 
 import ombak from "../img/pretelan/img5.png";
 import gelap1 from "../img/pretelan/img7.png";
@@ -15,14 +16,14 @@ import armasomtk from "../img/pretelan/armasomtkasoy.png";
 import btbupan from "../img/pretelan/img1.png";
 import btdaftar from "../img/pretelan/img2.png";
 import karang from "../img/pretelan/img6.png";
-import cardmtk from "../img/pretelan/card-mtk.png";
+import cardmtk from "../img/pretelan/Math-01.png";
 import textmtk from "../img/pretelan/mtkgede.png";
 import textcommentmtk from "../img/pretelan/mtkcilik.png";
 import alas3 from "../img/pretelan/img9.png";
 
 import alashp from "../img/pretelan/yanto.png";
 import karanghp from "../img/pretelan/2-01.png";
-import cardhp from "../img/pretelan/kartukurangparty.png";
+import cardhp from "../img/pretelan/nguuaantokcik.png";
 import bawah2 from "../img/pretelan/ombak hp.png";
 import armasomtkhp from "../img/pretelan/armasomtkasoy.png";
 import mathhp from "../img/pretelan/mtkgede.png";
@@ -31,8 +32,7 @@ import daftarhp from "../img/pretelan/img2.png";
 import bupanhp from "../img/pretelan/img1.png";
 
 import { register } from "../setting/otherlink";
-
-import Loading1 from "../animation/loading1";
+import { bupanmtk } from "../setting/otherlink";
 
 const Mtk =()=>{
     const [showModal2, setShowModal2] = useState(false);
@@ -68,7 +68,7 @@ const Mtk =()=>{
     </div>
     <div className="tombol">
     <img className="daftar" src={btdaftar} alt=""   onClick={() => window.open(register, '_blank')}/>
-    <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2}/>
+    <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2} href= {bupanmtk}/>
     </div> 
     </div>
     </div>
@@ -103,18 +103,12 @@ const Mtk =()=>{
           <Modal.Title>Buku Panduan</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body>Buku Panduan akan ditampilkan dalam bentuk PDF. Klik tombol bertuliskan "PDF" di bawah untuk membukanya! atau Download untuk mendownloadnya dalam bentuk file</Modal.Body>
+        <Modal.Body>Buku Panduan akan ditampilkan dalam bentuk PDF. Klik tombol bertuliskan 'Open' di bawah untuk melihat isi buku panduan yang berisi ketentuan lomba.</Modal.Body>
 
         <Modal.Footer>
-        <a href="url" target="_blank" rel="noopener noreferrer">
+        <a href= {bupanmtk} target="_blank" rel="noopener noreferrer">
           <Button variant="secondary">
-            Download
-          </Button>
-        </a>
-
-        <a href="url" target="_blank" rel="noopener noreferrer">
-          <Button variant="secondary">
-            PDF
+            Open
           </Button>
         </a>
         </Modal.Footer>

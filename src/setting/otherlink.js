@@ -23,3 +23,11 @@ export const ytarrahmat = "https://www.youtube.com/@ArRahmatOfficial"
 export const register = "https://armaso.arrahmat-bjn.sch.id/pendaftaran.php"
 export const login = "https://armaso.arrahmat-bjn.sch.id/login.php"
 export const pengumuman = "https://armaso.arrahmat-bjn.sch.id/pengumuman.php"
+
+//video pendaftaran
+export const tutorial ="url"
+
+//subject section
+export const bupanipa ="url"
+export const bupanips ="url"
+export const bupanmtk ="url"

@@ -6,7 +6,7 @@ import TL from "./TL";
 const Timeline =()=>{
 
     return(
-        <section className="timeline-container" id="timeline">
+        <section className="timeline-container-fluid" id="timeline">
             <TL/>
             <Countdownt/>
         </section>

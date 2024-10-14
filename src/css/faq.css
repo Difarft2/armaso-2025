@@ -1,11 +1,11 @@
-.faq-container {
-  width: 100px;
-  margin: 0 auto;
-  padding: 0 15px;
-  padding: 50px;
+.faq-container-fluid {
+  background-color: rgba(23, 129, 145, 0.7); 
+  width: 100%; /* Ubah dari 100px ke 100% */
+  margin: 0; /* Hapus margin */
+  padding: 50px; /* Anda bisa menyesuaikan padding ini jika diperlukan */
 }
 
-.judul-faq{
+.judul-faq {
   color: black;
   font-size: 40px;
 }
@@ -25,7 +25,7 @@
 }
 
 .pertanyaan, .jawaban {
-  font-size: 20;
+  font-size: 20px; /* Pastikan ada 'px' di sini */
   color: black;
 }
 
@@ -52,12 +52,18 @@
   padding: 10px 0; 
 }
 
-@media (max-width: 768px) {
-  .faq-container {
+/* @media (max-width: 768px) {
+  .faq-container-fluid {
+    background-color: rgba(23, 129, 145, 0.7);
     width: 100vw;
     padding: 0px;
     margin: 0px;
-  }
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 
   .faq-question {
     font-size: 16px;
@@ -66,13 +72,17 @@
   .faq-answer {
     font-size: 20px; 
   }
-}
+} */
 
-@media (max-width: 480px) {
-  .faq-container {
+@media (max-width: 768px) {
+  .faq-container-fluid {
     width: 100vw;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(23, 129, 145, 0.7); 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border-radius: 20px;
   }
 
   .faq-question {
