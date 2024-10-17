@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Copyright from "../components/copyright";
 import ContactUS from "../components/contactus"
 import Nav from "../components/navbar";
-import Loading1 from "../animation/loading1";
 
 import ombak from "../img/pretelan/img5.png";
 import gelap1 from "../img/pretelan/img7.png";
@@ -31,8 +30,8 @@ import tulisanneipa from "../img/pretelan/img10.png";
 import daftarhp from "../img/pretelan/img2.png";
 import bupanhp from "../img/pretelan/img1.png";
 
-import { register } from "../setting/otherlink";
-import { bupanipa } from "../setting/otherlink";
+import {  bupanipa, register } from "../setting/otherlink";
+
 
 
 
@@ -43,7 +42,6 @@ const Ipa =()=>{
     const handleShowModal2 = () => setShowModal2(true);
     return(
     <div>
-      <Loading1>
 
     <Nav/>
 
@@ -73,7 +71,7 @@ const Ipa =()=>{
     </div>
     <div className="tombol">
             <img className="daftar" src={btdaftar} alt=""   onClick={() => window.open(register, '_blank')}/>
-            <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2} href= {bupanipa}/>
+            <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2}/>
         
     </div> 
     </div>
@@ -121,7 +119,6 @@ const Ipa =()=>{
         </a>
         </Modal.Footer>
       </Modal>
-      </Loading1>
     </div>
     )
 }

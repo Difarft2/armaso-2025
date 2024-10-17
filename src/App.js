@@ -9,6 +9,8 @@ import Mtk from "./page/MTK";
 import Notfound from "./page/Notfound";
 
 
+
+
 function App() {
 return (
   <Router>
@@ -18,7 +20,7 @@ return (
           <Route path="/Mapel/Ipa" element={<Ipa/>}/>
           <Route path="/Mapel/Ips" element={<Ips/>}/>
           <Route path="/Mapel/Mtk" element={<Mtk/>}/>
-          {/* Not found path */}
+          Not found path
           <Route path="*" element={<Notfound/>}/>
       </Routes>
   </Router>

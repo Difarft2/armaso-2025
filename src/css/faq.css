@@ -1,8 +1,8 @@
 .faq-container-fluid {
   background-color: rgba(23, 129, 145, 0.7); 
-  width: 100%; /* Ubah dari 100px ke 100% */
-  margin: 0; /* Hapus margin */
-  padding: 50px; /* Anda bisa menyesuaikan padding ini jika diperlukan */
+  width: 100%; 
+  margin: 0; 
+  padding: 50px; 
 }
 
 .judul-faq {
@@ -25,7 +25,7 @@
 }
 
 .pertanyaan, .jawaban {
-  font-size: 20px; /* Pastikan ada 'px' di sini */
+  font-size: 20px;
   color: black;
 }
 
@@ -51,28 +51,6 @@
   max-height: 500px; 
   padding: 10px 0; 
 }
-
-/* @media (max-width: 768px) {
-  .faq-container-fluid {
-    background-color: rgba(23, 129, 145, 0.7);
-    width: 100vw;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
-  .faq-question {
-    font-size: 16px;
-  }
-
-  .faq-answer {
-    font-size: 20px; 
-  }
-} */
 
 @media (max-width: 768px) {
   .faq-container-fluid {

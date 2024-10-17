@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Copyright from "../components/copyright";
 import Nav from "../components/navbar";
 import ContactUS from "../components/contactus";
-import Loading1 from "../animation/loading1";
 
 import ombak from "../img/pretelan/img5.png";
 import gelap1 from "../img/pretelan/img7.png";
@@ -41,7 +40,6 @@ const Ips =()=>{
     const handleShowModal2 = () => setShowModal2(true);
     return(
         <div>
-          <Loading1>
 
     <Nav/>
 
@@ -71,7 +69,7 @@ const Ips =()=>{
     </div>
       <div className="tombol">
     <img className="daftar" src={btdaftar} alt=""   onClick={() => window.open(register, '_blank')}/>
-    <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2} href= {bupanips}/>
+    <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2} />
     </div> 
     </div>
     </div>
@@ -118,7 +116,6 @@ const Ips =()=>{
         </a>
         </Modal.Footer>
       </Modal>
-      </Loading1>
     </div>
     )
 }

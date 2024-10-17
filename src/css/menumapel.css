@@ -54,7 +54,7 @@ h1.judul-mn {
 }
 
     .card1, .card2, .card3 {
-        min-width: 270px; 
+        min-width: 250px; 
         height: auto;
         scroll-snap-align: center; 
     }

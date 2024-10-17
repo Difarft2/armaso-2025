@@ -1,7 +1,6 @@
 import "../css/contactus.css";
 
 import igIco from "../img/ico/instagram-logo.png";
-import emailico from "../img/ico/email.png";
 import mapico from "../img/ico/map.png";
 import waico from "../img/ico/whatsapp.png";
 import ytico from "../img/ico/youtube.png"
@@ -13,7 +12,6 @@ import { wa1 } from "../setting/otherlink";
 import { wa2 } from "../setting/otherlink";
 import { lokasi } from "../setting/otherlink";
 import { webarahmat } from "../setting/otherlink";
-import { mail } from "../setting/otherlink";
 
 
 const ContactUS = () => {
@@ -34,13 +32,6 @@ const ContactUS = () => {
             <img src={mapico} alt="Map Logo" />
               <p><a href={lokasi}  target="_blank" rel="noopener noreferrer">
                 PPM Ar Rahmat Bojonegoro
-              </a></p>
-          </div>
-
-          <div className="icon-email">
-            <img src={emailico} alt="Email Logo" />
-              <p><a href={mail}>
-                armasoarrahmat@gmail.com
               </a></p>
           </div>
         </div>

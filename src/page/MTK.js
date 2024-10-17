@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from "../components/navbar";
 import Copyright from "../components/copyright";
 import ContactUS from "../components/contactus";
-import Loading1 from "../animation/loading1";
+
 
 import ombak from "../img/pretelan/img5.png";
 import gelap1 from "../img/pretelan/img7.png";
@@ -41,8 +41,7 @@ const Mtk =()=>{
     const handleShowModal2 = () => setShowModal2(true);
     return(
         <div>
-          <Loading1>
-
+          
     <Nav/>
     <div className="mtk-container-fluid">
 
@@ -68,7 +67,7 @@ const Mtk =()=>{
     </div>
     <div className="tombol">
     <img className="daftar" src={btdaftar} alt=""   onClick={() => window.open(register, '_blank')}/>
-    <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2} href= {bupanmtk}/>
+    <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2} />
     </div> 
     </div>
     </div>
@@ -113,7 +112,6 @@ const Mtk =()=>{
         </a>
         </Modal.Footer>
       </Modal>
-      </Loading1>
     </div>
     )
 }

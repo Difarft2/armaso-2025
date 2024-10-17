@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../css/parallaxhome.css";
 
 import bobawah from "../img/AssetWebsite/borderrrrrrrrrrrr.png";
@@ -14,44 +14,53 @@ import bg1 from "../img/Fixed/Sorted/Ground3-01.png"
 import bg2 from "../img/Fixed/Sorted/Ground2.png"
 import bg3 from "../img/Fixed/Sorted/Ground1-01.png"
 import watu from "../img/Fixed/Sorted/Coralsrock-01.png"
-import omah from "../img/Fixed/Sorted/Casle-01.png"
+import omah from "../img/Fixed/Sorted/castle-01.png"
 import atas from "../img/Fixed/Sorted/Top-01.png"
-import jeneng from "../img/Fixed/Sorted/Tittle-01.png"
+import jeneng from "../img/Fixed/Sorted/yanto.png"
 
 const Parallaxhome = () => {
-  const [isScrolling, setIsScrolling] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
-
-  useEffect(() => {
-    let scrollTimeout;
-
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const parallaxHeight = document.querySelector(".prhome-container")?.offsetHeight || 0;
-
-      if (scrollPosition > parallaxHeight) {
-        setIsHidden(true);
-      } else {
-        setIsHidden(false);
-      }
-
-      setIsScrolling(true);
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        setIsScrolling(false);
-      }, 500); 
-
-      const updateParallax = () => {
-        const armasoElement = document.querySelector(".armaso");
-        const grd1 = document.querySelector(".grd1");
-        const grd2 = document.querySelector(".grd2");
-        const kastilElement = document.querySelector(".kastil");
-
-        if (armasoElement) armasoElement.style.transform = `translateY(${scrollPosition * 0.7}px)`;
-        if (grd1) grd1.style.transform = `translateY(${scrollPosition * 0.4}px)`;
-        if (grd2) grd2.style.transform = `translateY(${scrollPosition * 0.3}px)`;
-        if (kastilElement) kastilElement.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-
+    useEffect(() => {
+        const debounce = (func, wait = 10, immediate = true) => {
+          let timeout;
+          return function () {
+            const context = this,
+              args = arguments;
+            const later = () => {
+              timeout = null;
+              if (!immediate) func.apply(context, args);
+            };
+            const callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+          };
+        };
+    
+        const handleScroll = debounce(() => {
+          const scrollPosition = window.scrollY;
+          const armasoElement = document.querySelector(".armaso");
+          const grd1 = document.querySelector(".grd1");
+          const grd2 = document.querySelector(".grd2");
+          const kastilElement = document.querySelector(".kastil");
+    
+          const armasoTranslate = scrollPosition * 0.7;
+          const grd1Translate = scrollPosition * 0.4;
+          const grd2Translate = scrollPosition * 0.3;
+          const kastilTranslate = scrollPosition * 0.5;
+    
+          if (armasoElement) {
+            armasoElement.style.transform = `translateY(${armasoTranslate}px)`;
+          }
+          if (grd1) {
+            grd1.style.transform = `translateY(${grd1Translate}px)`;
+          }
+          if (grd2) {
+            grd2.style.transform = `translateY(${grd2Translate}px)`;
+          }
+          if (kastilElement) {
+            kastilElement.style.transform = `translateY(${kastilTranslate}px)`;
+          }
+    
           const judul = document.querySelector(".jeneng");
           const gd1 = document.querySelector(".bg1");
           const gd2 = document.querySelector(".bg2");
@@ -74,56 +83,47 @@ const Parallaxhome = () => {
           if (omah) {
             omah.style.transform = `translateY(${omahTranslate}px)`;
           }
-      };
+        }, 10);
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
 
-      
+    return (
+        <div className="prhome-container">
+            <div className="armaso">
+                <img src={armaso} alt="armaso" className="armaso-img" />
+            </div>
 
-      requestAnimationFrame(updateParallax);
-    };
+            <div className="border"> 
+                <img src={bobawah} alt="" className="border-img" />
+            </div>
 
-    window.addEventListener("scroll", handleScroll);
+            <div className="grd1">
+                <img src={ground1} alt="" className="grd-img1" />
+            </div>
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      clearTimeout(scrollTimeout);
-    };
-  }, []);
+            <div className="grd2">
+                <img src={ground2} alt="" className="grd-img2" />
+            </div>
 
-  return (
-    <div className={`prhome-container ${isHidden ? 'hidden' : ''}`}>
-      <div className="armaso">
-        <img
-          src={armaso}
-          alt="armaso"
-          className={`armaso-img ${isScrolling ? 'stop-animation' : 'start-animation'}`}
-        />
-      </div>
+            <div className="grd3">
+                <img src={ground3} alt="" className="grd-img3" />
+            </div>
 
-      <div className="border"> 
-        <img src={bobawah} alt="" className="border-img" />
-      </div>
+            <div className="iwak">
+                <img src={iwak} alt="" className="iwak-img" />
+            </div>
 
-      <div className="grd1">
-        <img src={ground1} alt="" className="grd-img1" />
-      </div>
+            <div className="kastil">
+                <img src={kastil} alt="" className="kastil-img" />
+            </div>
 
-      <div className="grd2">
-        <img src={ground2} alt="" className="grd-img2" />
-      </div>
-
-      <div className="grd3">
-        <img src={ground3} alt="" className="grd-img3" />
-      </div>
-
-      <div className="iwak">
-        <img src={iwak} alt="" className="iwak-img" />
-      </div>
-
-      <div className="kastil">
-        <img src={kastil} alt="" className="kastil-img" />
-      </div>
-
-      <div className="borderbawah">
+                {/* hppppppp */}
+            <div className="borderbawah">
                 <img className="borderbawah-img" src={borderbawah1} alt=""/>
             </div>
 
@@ -154,8 +154,8 @@ const Parallaxhome = () => {
             <div className="jeneng">
                 <img className="jeneng-img" src={jeneng} alt=""/>
             </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default Parallaxhome;

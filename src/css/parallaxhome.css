@@ -99,34 +99,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    /* animation: moveCastle 5s ease-in-out infinite;
-    -webkit-animation: moveCastle 5s ease-in-out infinite; */
 }
-
-/* .armaso-img.stop-animation {
-    animation: none;
-    -webkit-animation: none;
-} */
-
-/* @keyframes moveCastle {
-    0% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-10px);
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        -o-transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-    }
-} */
 
 .iwak{
     position: absolute;
@@ -139,40 +112,7 @@ body {
 .iwak-img{
     height: 100vh;
     width: 100%;
-    /* animation: moveFish 10s linear infinite;
-    -webkit-animation: moveFish 10s linear infinite; */
 }
-
-/* @keyframes moveFish {
-    0% {
-        transform: translateX(0vw);
-        -webkit-transform: translateX(0vw);
-        -moz-transform: translateX(0vw);
-        -ms-transform: translateX(0vw);
-        -o-transform: translateX(0vw);
-    }
-    25% {
-        transform: translateX(-1vw);
-        -webkit-transform: translateX(-1vw);
-        -moz-transform: translateX(-1vw);
-        -ms-transform: translateX(-1vw);
-        -o-transform: translateX(-1vw);
-    }
-    75% {
-        transform: translateX(1vw);
-        -webkit-transform: translateX(1vw);
-        -moz-transform: translateX(1vw);
-        -ms-transform: translateX(1vw);
-        -o-transform: translateX(1vw);
-}
-    100% {
-        transform: translateX(0vw);
-        -webkit-transform: translateX(0vw);
-        -moz-transform: translateX(0vw);
-        -ms-transform: translateX(0vw);
-        -o-transform: translateX(0vw);
-}
-} */
 
 .kastil{
     position: absolute;
@@ -191,10 +131,6 @@ body {
 .grd1, .grd2, .grd3, .kastil {
     transform: translateY(0); 
 }
-
-/* .borderbawah, .bordertengah, .bg1, .bg2, .bg3, .watu, .atas, .jeneng, .omah{
-    display: none;
-} */
 
 
 @media only screen and (max-width: 768px) {
@@ -215,25 +151,12 @@ body {
         z-index: 20;
     }
 
-    .bordertengah{
-        position: absolute;
-        z-index: 19;
-        width: 100%;
-        height: 100vh;
-        top: -90px;
-    }
-
-    .bordertengah-img{
-        height: 100vh;
-        width: 100%;
-    }
-
     .bg1{
         position: absolute;
         z-index: 18;
         width: 100%;
         height: 100vh;
-        top: 630px;
+        top: 0px;
     }
 
     .bg1-img{
@@ -246,7 +169,7 @@ body {
         z-index: 17;
         width: 100%;
         height: 100vh;
-        top: 630px;
+        top: 145px;
     }
 
     .bg2-img{
@@ -256,7 +179,7 @@ body {
 
     .bg3{
         position: absolute;
-        z-index: 16;
+        z-index: 14;
         width: 100%;
         height: 100vh;
     }
@@ -268,7 +191,7 @@ body {
 
     .watu{
         position: absolute;
-        z-index: 15;
+        z-index: 16;
         width: 100%;
         height: 100vh;
     }
@@ -280,7 +203,7 @@ body {
 
     .omah{
         position: absolute;
-        z-index: 14;
+        z-index: 13;
         width: 100%;
         height: 100vh;
     }
@@ -292,8 +215,8 @@ body {
 
     .atas{
         position: absolute;
-        top: 0px;
-        z-index: 14;
+        top: -0px;
+        z-index: 13;
         width: 100%;
         height: 100vh;
     }
@@ -314,6 +237,5 @@ body {
     .jeneng-img{
         height: 100vh;
         width: 100%;
-        animation: moveCastle 5s ease-in-out infinite;
     }
 }

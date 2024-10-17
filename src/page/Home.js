@@ -4,7 +4,6 @@ import "../css/home.css";
 import Navbar from "../components/navbar";
 import Copyright from "../components/copyright";
 
-import Loading1 from "../animation/loading1";
 import Parallaxhome from "../animation/parallaxHome";
 
 import MenuMapel from "../components/menuMapel";
@@ -17,7 +16,6 @@ import ContactUS from "../components/contactus";
 const Home = () => {
   return (
     <div>
-      <Loading1>
         <Navbar />
 
         <div id="parallaxHome" className="parallax-section">
@@ -29,15 +27,14 @@ const Home = () => {
           <Timeline />
           <MenuMapel />
           <FAQ />
+          <Sponsor />
         </div>
 
         <div className="contact-section">
-          <Sponsor />
+
           <ContactUS />
         </div>
-
         <Copyright />
-      </Loading1>
     </div>
   );
 };

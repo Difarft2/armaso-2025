@@ -13,7 +13,7 @@ export const faqs = [
   },
   {
     question: "Apakah panitia menyediakan penginapan bagi peserta yang datang dari luar kota?",
-    answer: "Mohon maaf, kami tidak menyediakan penginapan bagi peserta. Namun, kami memiliki beberapa rekomendasi penginapan yang nyaman dan terjangkau."
+    answer: "-"
   },
   {
     question: "Jika peserta ingin mengikuti lebih dari satu bidang lomba, apakah diizinkan?",
@@ -25,7 +25,7 @@ export const faqs = [
   },
   {
     question: "Apakah pada saat pelaksanaan lomba akan ada event lain selain ARMASO?",
-    answer: "Tidak ada, tetapi panitia akan mendirikan stan makanan untuk peserta."
+    answer: "Tidak ada, tetapi panitia akan mendirikan stand makanan untuk peserta."
   },
   {
     question: "Apa saja fasilitas yang didapatkan oleh peserta?",

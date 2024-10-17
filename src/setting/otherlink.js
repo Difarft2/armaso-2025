@@ -25,9 +25,9 @@ export const login = "https://armaso.arrahmat-bjn.sch.id/login.php"
 export const pengumuman = "https://armaso.arrahmat-bjn.sch.id/pengumuman.php"
 
 //video pendaftaran
-export const tutorial ="url"
+export const tutorial = "https://armaso.arrahmat-bjn.sch.id/Bupang/vidio%20tutorial%20fix.mp4"
 
 //subject section
-export const bupanipa ="url"
-export const bupanips ="url"
-export const bupanmtk ="url"
+export const bupanipa = "https://armaso.arrahmat-bjn.sch.id/Bupang/BUKU%20PANDUAN%20IPA%20ARMASO%2025.pdf"
+export const bupanips = "https://armaso.arrahmat-bjn.sch.id/Bupang/BUKU%20PANDUAN%20IPS%20ARMASO%2025.pdf"
+export const bupanmtk = "https://armaso.arrahmat-bjn.sch.id/Bupang/BUKU%20PANDUAN%20MTK%20ARMASO%2025.pdf"
