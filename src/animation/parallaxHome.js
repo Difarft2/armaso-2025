@@ -1,22 +1,22 @@
 import React, { useEffect } from "react";
 import "../css/parallaxhome.css";
 
-import bobawah from "../img/AssetWebsite/borderrrrrrrrrrrr.png";
-import ground1 from "../img/AssetWebsite/Ground1-01.png";
-import ground2 from "../img/AssetWebsite/Ground2-01.png";
-import ground3 from "../img/AssetWebsite/Ground3-01.png";
-import kastil from "../img/AssetWebsite/Castle-01.png";
-import iwak from "../img/AssetWebsite/TopAnimals-01.png";
-import armaso from "../img/AssetWebsite/armasojeneng.png";
+import bobawah from "../img/AssetWebsite/borderrrrrrrrrrrr.png.svg";
+import ground1 from "../img/AssetWebsite/Ground1-01.png.svg";
+import ground2 from "../img/AssetWebsite/Ground2-01.png.svg";
+import ground3 from "../img/AssetWebsite/Ground3-01.png.svg";
+import kastil from "../img/AssetWebsite/Castle-01.png.svg";
+import iwak from "../img/AssetWebsite/TopAnimals-01.png.svg";
+import armaso from "../img/AssetWebsite/armasojeneng.png.svg";
 
-import borderbawah1 from "../img/Fixed/Sorted/Fole-01.png"
-import bg1 from "../img/Fixed/Sorted/Ground3-01.png"
-import bg2 from "../img/Fixed/Sorted/Ground2.png"
-import bg3 from "../img/Fixed/Sorted/Ground1-01.png"
-import watu from "../img/Fixed/Sorted/Coralsrock-01.png"
-import omah from "../img/Fixed/Sorted/castle-01.png"
-import atas from "../img/Fixed/Sorted/Top-01.png"
-import jeneng from "../img/Fixed/Sorted/yanto.png"
+import borderbawah1 from "../img/Fixed/Sorted/Fole-01.png.svg"
+import bg1 from "../img/Fixed/Sorted/Ground3-01.png.svg"
+import bg2 from "../img/Fixed/Sorted/Ground2.png.svg"
+import bg3 from "../img/Fixed/Sorted/Ground1-01.png.svg"
+import watu from "../img/Fixed/Sorted/Coralsrock-01.png.svg"
+import omah from "../img/Fixed/Sorted/castle-01.png.svg"
+import atas from "../img/Fixed/Sorted/Top-01.png.svg"
+import jeneng from "../img/Fixed/Sorted/yanto.svg"
 
 const Parallaxhome = () => {
     useEffect(() => {

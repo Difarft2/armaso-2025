@@ -1,8 +1,8 @@
 import "../css/menumapel.css"
 
-import Ipa from "../img/cardMapel/Science-01.png"
-import Ips from "../img/cardMapel/Social-01.png"
-import Mtk from "../img/cardMapel/Math-01.png"
+import Ipa from "../img/cardMapel/Science-01.png.svg"
+import Ips from "../img/cardMapel/Social-01.png.svg"
+import Mtk from "../img/cardMapel/Math-01.png.svg"
 
 
 

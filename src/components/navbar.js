@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
-import lgarmaso from "../img/ico/logo armaso.png"
+import lgarmaso from "../img/ico/Logo Armaso Fix-01.png.svg"
 import { register, login, pengumuman } from "../setting/otherlink";
 
 

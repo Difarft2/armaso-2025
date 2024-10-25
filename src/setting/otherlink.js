@@ -1,7 +1,3 @@
-// Link PDF
-export const bukupanduan = "https://armaso.arrahmat-bjn.sch.id/mainPage/PDF/SYARAT.pdf"
-export const syaratdanketentuan = "https://armaso.arrahmat-bjn.sch.id/mainPage/PDF/SYARAT.pdf"
-
 //link wa
 export const wa1 = "https://api.whatsapp.com/send/?phone=6281234604006&text=Chat+open+by+https%3A%2F%2Fwhatsappdialer.otutom.com%2Fen%2F&type=phone_number&app_absent=0"
 export const wa2 = "https://api.whatsapp.com/send/?phone=6283847049148&text=Chat+open+by+https%3A%2F%2Fwhatsappdialer.otutom.com%2Fen%2F&type=phone_number&app_absent=0"
@@ -31,3 +27,6 @@ export const tutorial = "https://armaso.arrahmat-bjn.sch.id/Bupang/vidio%20tutor
 export const bupanipa = "https://armaso.arrahmat-bjn.sch.id/Bupang/BUKU%20PANDUAN%20IPA%20ARMASO%2025.pdf"
 export const bupanips = "https://armaso.arrahmat-bjn.sch.id/Bupang/BUKU%20PANDUAN%20IPS%20ARMASO%2025.pdf"
 export const bupanmtk = "https://armaso.arrahmat-bjn.sch.id/Bupang/BUKU%20PANDUAN%20MTK%20ARMASO%2025.pdf"
+
+export const susunan = "https://armaso.arrahmat-bjn.sch.id/Bupang/SUSUNAN%20ACARA.pdf"
+export const GD = "https://drive.google.com/drive/folders/17qGFqnQ2aj55TV6JFftrukmrKzpxLoci"

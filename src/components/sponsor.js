@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
-// import img1 from '';
+import img1 from '../other/Logo PT ADELIRA PERKASA  JAYA.png';
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -28,12 +28,16 @@ function MyVerticallyCenteredModal(props) {
         <p>{props.content}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="primary" href={props.websiteLink} target="_blank">
-          Website
-        </Button>
-        <Button variant="secondary" href={props.videoLink} target="_blank">
-          Promotion Video
-        </Button>
+        {props.buttonCount > 0 && (
+          <Button variant="primary" href={props.websiteLink} target="_blank">
+            Website
+          </Button>
+        )}
+        {props.buttonCount === 2 && (
+          <Button variant="secondary" href={props.videoLink} target="_blank">
+            Promotion Video
+          </Button>
+        )}
       </Modal.Footer>
     </Modal>
   );
@@ -41,10 +45,10 @@ function MyVerticallyCenteredModal(props) {
 
 function ShapeExample() {
   const [modalShow, setModalShow] = useState(false);
-  const [modalContent, setModalContent] = useState({ title: "", content: "", websiteLink: "", videoLink: "" });
+  const [modalContent, setModalContent] = useState({ title: "", content: "", websiteLink: "", videoLink: "", buttonCount: 1 });
 
-  const handleShowModal = (title, content, websiteLink, videoLink) => {
-    setModalContent({ title, content, websiteLink, videoLink });
+  const handleShowModal = (title, content, websiteLink, videoLink, buttonCount) => {
+    setModalContent({ title, content, websiteLink, videoLink, buttonCount });
     setModalShow(true);
   };
 
@@ -52,19 +56,38 @@ function ShapeExample() {
     <Container fluid>
       <Row>
         <h1 className="judul-os">Ocean Sponsor</h1>
+
+        {/* Modal with 1 button */}
         <Col xs={12} sm={6} md={3}>
           <Image
-            // src={img1}
+            src={img1}
             rounded
             className="img-fluid"
             onClick={() => handleShowModal(
-              // "YouTube Sponsor",
-              // "Anda dapat mengunjungi website yang dimiliki oleh Youtube atau menonton video promosinya. Klik tombol bertuliskan 'Website' untuk mengunjungi websitenya dan klik tombol bertuliskan 'Promotion Video' untuk menonton video promosinya.",
-              // "https://www.youtube.com",
-              // "https://www.youtube.com/watch?v=example"
+              "PT ADELIRA PERKASA JAYA",
+              "Kunjungi website PT ADELIRA PERKASA JAYA untuk informasi lebih lanjut.",
+              "https://www.google.com/maps/place/CV+Adelira+Perkasa+%2FPt+Adelira+perkasa+jaya/@-7.1298027,111.7823948,15z/data=!4m6!3m5!1s0x2e77799583e2a8e3:0x60aaafdd1d267138!8m2!3d-7.1298027!4d111.7823948!16s%2Fg%2F11fpjwms40?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+              "", // Kosong untuk modal dengan 1 tombol
+              1 // 1 tombol
             )}
           />
         </Col>
+
+        {/* Modal with 2 buttons
+        <Col xs={12} sm={6} md={3}>
+          <Image
+            src={img1}
+            rounded
+            className="img-fluid"
+            onClick={() => handleShowModal(
+              "PT EXAMPLE JAYA",
+              "Kunjungi website PT EXAMPLE JAYA dan tonton video promosinya.",
+              "https://www.website-pt2.com",
+              "https://www.youtube.com/watch?v=example2",
+              2 // 2 tombol
+            )}
+          />
+        </Col> */}
       </Row>
 
       <MyVerticallyCenteredModal
@@ -74,6 +97,7 @@ function ShapeExample() {
         content={modalContent.content}
         websiteLink={modalContent.websiteLink}
         videoLink={modalContent.videoLink}
+        buttonCount={modalContent.buttonCount}
       />
     </Container>
   );

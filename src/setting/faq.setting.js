@@ -9,12 +9,12 @@ export const faqs = [
   },
   {
     question: "Apakah ada perlakuan khusus bagi sekolah yang mengirimkan banyak peserta?",
-    answer: "Ya, setiap pendaftaran 5 orang yang berasal dari sekolah yang sama akan mendapat potongan harga."
+    answer: "Ya, untuk setiap 10 peserta yang mendaftar dari sekolah yang sama, kami menawarkan 2 pendaftaran tambahan secara gratis.."
   },
-  {
-    question: "Apakah panitia menyediakan penginapan bagi peserta yang datang dari luar kota?",
-    answer: "-"
-  },
+  // {
+  //   question: "Apakah panitia menyediakan penginapan bagi peserta yang datang dari luar kota?",
+  //   answer: "-"
+  // },
   {
     question: "Jika peserta ingin mengikuti lebih dari satu bidang lomba, apakah diizinkan?",
     answer: "Peserta diperbolehkan mengikuti lebih dari satu bidang lomba, dengan syarat tidak ada tambahan waktu untuk mengerjakan soal."

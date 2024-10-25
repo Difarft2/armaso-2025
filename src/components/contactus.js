@@ -1,10 +1,10 @@
 import "../css/contactus.css";
 
-import igIco from "../img/ico/instagram-logo.png";
-import mapico from "../img/ico/map.png";
-import waico from "../img/ico/whatsapp.png";
-import ytico from "../img/ico/youtube.png"
-import web from "../img/ico/globe.png"
+import igIco from "../img/ico/instagram-logo.svg";
+import mapico from "../img/ico/map.svg";
+import waico from "../img/ico/whatsapp.svg";
+import ytico from "../img/ico/youtube.svg"
+import web from "../img/ico/globe.svg"
 
 import { igarmaso } from "../setting/otherlink";
 import { ytarrahmat } from "../setting/otherlink";
