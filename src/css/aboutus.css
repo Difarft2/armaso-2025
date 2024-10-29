@@ -113,8 +113,6 @@ h1 {
   height: auto;
 }
 
-
-
 .text-content {
   line-height: 1.5;
   color: #000000;
@@ -128,10 +126,10 @@ h1 {
 
 @media (min-width: 768px) {
   .text-content {
+    position: absolute;
+    left: 0px;
     font-size: 18px;
     text-align: center;
-    padding: 0;
-    
   }
 
   .content {
@@ -143,10 +141,6 @@ h1 {
 
   .carousel-container {
     width: 40%;
-  }
-
-  .text-content {
-    width: 50%;
   }
 }
 
@@ -174,6 +168,18 @@ h1 {
 }
 
 @media (max-width: 767px) {
+  .aboutus-container-fluid {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .content{
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+  }
+
   .carousel-container {
     width: 100%;
     height: 100%;
@@ -188,7 +194,7 @@ h1 {
     margin-top: 10px;
     font-size: 14px;
     text-align: center;
-    width: 100vw;
+    width: 90vw;
   }
 
   .buttons, .btn {
