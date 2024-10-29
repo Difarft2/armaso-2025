@@ -1,0 +1,131 @@
+.cd-body {
+  background-color: transparent;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul-cd{
+  font-size: 40px;
+  color: black;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #555;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.countdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-container {
+  background-color: rgb(133, 232, 255);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.timer-item {
+  background: #ececec;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.timer-item span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.timer-item div {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: #4caf50;
+}
+
+.complete-message {
+  font-size: 1.5rem;
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; 
+  }
+
+  h2 {
+    font-size: 1.25rem; 
+  }
+
+  .countdown-container {
+    padding: 15px;
+    width: 90%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+  .timer {
+    flex-wrap: nowrap; 
+    gap: 5px; 
+  }
+
+  .timer-item {
+    font-size: 15px; 
+    padding: 15px;
+    flex: 1; 
+  }
+
+  .timer-item span {
+    font-size: 1.5rem; 
+  }
+  .message, .complete-message {
+    font-size:20px1rem; 
+  }
+
+  .countdown-container{
+    width: 100vw;
+  }
+}

@@ -1,0 +1,218 @@
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.carousel-item{
+  background-color: black;
+}
+
+.judul-au {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+.modal-content {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.modal-header {
+  padding-bottom: 10px;
+}
+
+.modal-footer {
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 580px;
+  }
+
+  .modal-content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    margin: 20px;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-body {
+    font-size: 1rem;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+  }
+
+  .modal-footer .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-content {
+    padding: 10px;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+
+  .modal-body {
+    font-size: 0.875rem;
+  }
+
+  .modal-footer {
+    font-size: 0.875rem;
+    padding: 10px;
+  }
+}
+
+.aboutus-container-fluid {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+h1 {
+  color: #333;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-container {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: auto;
+}
+
+
+
+.text-content {
+  line-height: 1.5;
+  color: #000000;
+  font-size: 16px;
+  background-color: rgba(40, 229, 229, 0.682);
+  border: 2px solid #000000; /* Menambahkan border hitam */
+  border-radius: 10px;
+  margin: 10px 20px; /* Jarak luar antar elemen */
+  padding: 20px; /* Jarak dalam antara teks dan border */
+}
+
+@media (min-width: 768px) {
+  .text-content {
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .carousel-container {
+    width: 40%;
+  }
+
+  .text-content {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .carousel-container {
+    width: 35%;
+  }
+
+  .text-content {
+    width: 55%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .text-content {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .buttons, .btn {
+    padding: 20px;
+  }
+
+  .judul-au {
+    margin-top: 90px; 
+    text-align: center;
+    font-size: 40px;
+    color: black;
+  }
+
+  h1 {
+    color: #333;
+    padding: 20px;
+    margin-top: 40px; 
+  }
+
+  .content {
+    padding-top: 40px; 
+  }
+
+  .modal-content {
+    padding-top: 30px;
+  }
+}

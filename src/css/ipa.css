@@ -1,0 +1,253 @@
+.ipa-container-fluid {
+    background-color: rgba(51,204,211,255) ;
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bupan {
+    cursor: pointer;
+}
+
+.daftar {
+    cursor: pointer;
+}
+
+.pretelan-hp {
+    display: none;
+}
+
+/* Ombak bawah */
+.container-ombak {
+    bottom: 0;
+    width: 100%;
+    z-index: 40;
+}
+
+.ombak {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Pretelan pojok kanan bawah (card, karang, dll) */
+.container-alas {
+    position: absolute;
+    bottom: 8vh;
+    right: 0;
+    width: 60vw;
+    object-fit: contain;
+}
+
+.alas1 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    height: 35vh;
+}
+
+.alas2 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    height: 40vh;
+}
+
+.alas3 {
+    width: 52vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 47vh;
+}
+
+.karang {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    bottom: -1.5vh;
+    right: 0vw;
+    z-index: 30;
+    object-fit: contain;
+}
+
+.card-ipa {
+    width: 34vw;
+    height: auto;
+    position: absolute;
+    bottom: 23vh;
+    right: 6vw;
+    z-index: 5;
+    object-fit: contain;
+}
+
+/* Circle text */
+.circle-text {
+    object-fit: contain;
+}
+
+.armaso {
+    position: absolute;
+    top: 7vh;
+    left: 4vw;
+    width: 30vw;
+    height: auto;
+}
+
+.text-science {
+    position: absolute;
+    top: 20vh;
+    left: 3.5vw;
+    width: 40vw;
+    height: auto;
+}
+
+.text-keterangan {
+    position: absolute;
+    top: 40vh;
+    left: 7vw;
+    width: 25vw;
+    height: auto;
+}
+
+/* Tombol bagian bawah */
+.tombol {
+    margin-left: 10.5vw;
+    display: flex;
+    gap: 2vw;
+    transform: translateY(10.5vh);
+}
+
+.bupan {
+    width: 10%;
+    height: auto;
+    z-index: 1000;
+}
+
+.daftar {
+    width: 10%;
+    height: auto;
+    z-index: 1000;
+}
+
+
+@media (max-width: 960px) {
+    .pretelan-desktop{
+        display: none;
+    }
+
+    .pretelan-hp {
+        display: block;
+        z-index: auto;
+    }
+
+    .bawah-hp, .bawah-hp2 {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top:  350px;
+        display: block;
+        object-fit: contain;
+        bottom: 0px;
+        object-fit: cover;
+        left: 0%;
+    }
+
+    .bawah-hp2{
+        z-index: 100;
+    }
+
+    .karang-hp{
+        width: 100%;
+        height: auto;
+        position: absolute;;
+        top: 100px;
+        display: block;
+        object-fit: contain;
+        bottom: 0px;
+        object-fit: cover;
+        left: 0%;
+        z-index: 90 !important;
+    }
+
+    .card-hp {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 115px;
+        display: block;
+        object-fit: contain;
+        bottom: -1.5vh;
+        object-fit: cover;
+        left: 0%;
+    }
+
+    .top-hp {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .armaso-hp {
+        max-width: 70vw;
+        height: auto;
+        top: 5vh;
+        position: absolute;
+        bottom: 10vh;
+    }
+
+    .science-hp {
+        max-width: 85vw;
+        height: auto;
+        top: 15vh;
+        position: absolute;
+    }
+
+    .text-science {
+        max-width: 70vw !important;
+        width: 100% !important;
+        height: auto;
+        top: 24vh;
+        position: absolute;
+        left: 15vw;
+    }
+
+    .tombol-hp {
+        display: flex;
+        position: absolute;
+        z-index: 1000;
+        top: 360px;
+        gap: 8vw;
+        transform: translateY(-5vh);
+        -webkit-transform: translateY(-5vh);
+        -moz-transform: translateY(-5vh);
+        -ms-transform: translateY(-5vh);
+        -o-transform: translateY(-5vh);
+}
+
+    .daftar-ipa-hp {
+        max-width: 30vw;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .bupan-ipa-hp {
+        max-width: 30vw;
+        height: auto;
+        cursor: pointer;
+    }
+}

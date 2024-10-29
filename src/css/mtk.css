@@ -1,0 +1,261 @@
+.mtk-container-fluid {
+    background-color: rgba(84,140,214,255) ;
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    cursor: default;
+}
+
+.armaso {
+    cursor: pointer;
+}
+
+.bupan {
+    cursor: pointer;
+}
+
+.daftar {
+    cursor: pointer;
+}
+
+.pretelan-hp {
+    display: none;
+}
+
+/* Ombak bawah */
+.container-ombak {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 40;
+}
+
+.ombak {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Pretelan pojok kanan bawah (card, karang, dll) */
+.container-alas {
+    position: absolute;
+    bottom: 8vh;
+    right: 0;
+    width: 60vw;
+    object-fit: contain;
+}
+
+.alas1 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    height: 35vh;
+}
+
+.alas2 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    height: 40vh;
+}
+
+.alas3 {
+    width: 52vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 47vh;
+}
+
+.karang {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    bottom: -1.5vh;
+    right: 0vw;
+    z-index: 30;
+    object-fit: contain;
+}
+
+.card-mtk {
+    width: 34vw;
+    height: auto;
+    position: absolute;
+    bottom: 23vh;
+    right: 6vw;
+    z-index: 5;
+    object-fit: contain;
+}
+
+/* Circle text */
+.circle-text {
+    object-fit: contain;
+}
+
+.armaso-math {
+    position: absolute;
+    top: 7vh;
+    left: 4vw;
+    width: 30vw;
+    height: auto;
+}
+
+.text-math {
+    position: absolute;
+    top: 23vh;
+    left: 3.5vw;
+    width: 50vw;
+    height: auto;
+}
+
+.text-keterangan-math {
+    position: absolute;
+    top: 40vh;
+    left: 3.5vw;
+    width: 37vw;
+    height: auto;
+}
+
+/* Tombol bagian bawah */
+.tombol {
+    margin-left: 10.5vw;
+    display: flex;
+    gap: 2vw;
+    transform: translateY(10.5vh);
+}
+
+.bupan {
+    width: 10%;
+    height: auto;
+    z-index: 100;
+}
+
+.daftar {
+    width: 10%;
+    height: auto;
+    z-index: 100;
+}
+
+
+@media (max-width: 960px) {
+    .pretelan-desktop {
+        display: none;
+    }
+
+    .pretelan-hp {
+        display: block;
+    }
+
+    .bawah-hp, .bawah-hp2 {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top:  350px;
+        display: block;
+        object-fit: contain;
+        bottom: 0px;
+        object-fit: cover;
+        left: 0%;
+    }
+
+    .bawah-hp2{
+        z-index: 1000;
+    }
+
+    .karang-hp{
+        width: 100%;
+        height: auto;
+        position: absolute;;
+        top: 100px;
+        display: block;
+        object-fit: contain;
+        bottom: 0px;
+        object-fit: cover;
+        left: 0%;
+        z-index: 50;
+    }
+
+    .card-mtk-hp {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 123px;
+        display: block;
+        z-index: 55;
+        object-fit: contain;
+        bottom: -1.5vh;
+        object-fit: cover;
+        left: -1%;
+    }
+
+    .top-hp {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .armaso-mtk-hp {
+        max-width: 70vw;
+        height: auto;
+        top: 5vh;
+        position: absolute;
+        bottom: 10vh;
+    }
+
+    .math-hp {
+        max-width: 95vw !important;
+        height: auto;
+        top: 15vh !important;
+        position: absolute;
+    }
+
+    .text-math-hp{
+        width: 90% !important;
+        height: auto;
+        top: 24vh !important;
+        position: absolute;
+        left: 5vw;
+    }
+
+    .tombol-hp {
+        display: flex;
+        position: absolute;
+        z-index: 1000;
+        top: 340px;
+        gap: 8vw;
+        transform: translateY(-5vh);
+        -webkit-transform: translateY(-5vh);
+        -moz-transform: translateY(-5vh);
+        -ms-transform: translateY(-5vh);
+        -o-transform: translateY(-5vh);
+}
+
+    .daftar-mtk-hp {
+        max-width: 30vw;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .bupan-mtk-hp {
+        max-width: 30vw;
+        height: auto;
+        cursor: pointer;
+    }
+}

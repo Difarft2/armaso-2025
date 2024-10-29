@@ -1,0 +1,2 @@
+// abouus
+export const aboutusp = "ARMASO (Ar-Rahmat Mathematic, Science, and Social Olympiad) ini merupakan olimpiade tingkat SD Sederajat yang diadakan oleh Pondok Pesantren Modern Ar Rahmat Bojonegoro. Melalui ARMASO diharapkan para siswa sebagai generasi muda penerus bangsa dapat memiliki kompetensi dan kecerdasan dalam memahami isu-isu yang berkaitan dengan Matematika Sains dan Sosial."

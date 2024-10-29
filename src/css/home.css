@@ -1,0 +1,80 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.navbarrrr{
+  z-index: 1000;
+}
+
+h1, h2, h3, h4 {
+  color: black;
+}
+
+.parallax-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  background-image: url('../img/background/Parallax-01.svg'); 
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content > div {
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .parallax-section {
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content {
+    background-size: contain; 
+    background-attachment: scroll; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content > div {
+    padding: 20px;
+    margin: 20px 10px; 
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.contact-section {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 20px;
+    margin: 10px 5px; 
+    box-shadow: none; 
+  }
+
+  .main-content {
+    background-image: url('../img/background/11-01.svg'); 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+  }
+}

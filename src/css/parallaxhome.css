@@ -1,0 +1,299 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.prhome-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(133, 232, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.border{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    z-index: 21;
+}
+
+.border-img{
+    width: 100%;
+    position: absolute;
+}
+
+.grd1{
+    position: absolute;
+    z-index: 19;
+    width: 100%;
+    height: 100vh;
+    top: -8vh;
+}
+
+.grd-img1{
+    height: 100vh;
+    width: 100%;
+}
+
+.grd2{
+    position: absolute;
+    z-index: 18;
+    width: 100%;
+    height: 100vh;
+    top: 50vh;
+    top: -14vh;
+}
+
+.grd-img2{
+    height: 100vh;
+    width: 100%;
+}
+
+.grd3{
+    position: absolute;
+    z-index: 17;
+    width: 100%;
+    height: 100vh;
+    top: -14vh;
+}
+
+.grd-img3{
+    height: 100vh;
+    width: 100%;
+}
+
+.armaso{
+    position: absolute;
+    align-items: center;
+    z-index: 16 !important;
+    width: 100vw;
+    height: 100vh;
+    top: -15px;
+}
+
+.armaso-img{
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    animation: moveCastle 5s ease-in-out infinite;
+}
+
+  @keyframes moveCastle {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+.iwak{
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 100vh;
+    top: -8vh;
+}
+
+.iwak-img{
+    height: 100vh;
+    width: 100%;
+    animation: moveFish 10s linear infinite;
+}
+
+@keyframes moveFish {
+    0% {
+        transform: translateX(0vw);
+        -webkit-transform: translateX(0vw);
+        -moz-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+        -o-transform: translateX(0vw);
+    }
+    25% {
+        transform: translateX(-1vw);
+        -webkit-transform: translateX(-1vw);
+        -moz-transform: translateX(-1vw);
+        -ms-transform: translateX(-1vw);
+        -o-transform: translateX(-1vw);
+    }
+    75% {
+        transform: translateX(1vw);
+        -webkit-transform: translateX(1vw);
+        -moz-transform: translateX(1vw);
+        -ms-transform: translateX(1vw);
+        -o-transform: translateX(1vw);
+}
+    100% {
+        transform: translateX(0vw);
+        -webkit-transform: translateX(0vw);
+        -moz-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+        -o-transform: translateX(0vw);
+}
+}
+
+.kastil{
+    position: absolute;
+    z-index: 14;
+    width: 100%;
+    height: 100vh;
+    top: -7vh;
+    transform: translateY(0);
+}
+
+.kastil-img{
+    height: 100vh;
+    width: 100%;
+}
+
+.grd1, .grd2, .grd3, .kastil {
+    transform: translateY(0); 
+}
+
+/* .borderbawah, .bordertengah, .bg1, .bg2, .bg3, .watu, .atas, .jeneng, .omah{
+    display: none;
+} */
+
+
+@media only screen and (max-width: 768px) {
+    .armaso, .border, .grd1, .grd2, .grd3, .iwak, .kastil{
+        display: none;
+    }
+
+    .borderbawah{
+        width: 100vw;
+        position: absolute;
+
+        top: 270px;
+    }
+
+    .borderbawah-img{
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+    }
+
+    .bordertengah{
+        position: absolute;
+        z-index: 19;
+        width: 100%;
+        height: 100vh;
+        top: -90px;
+    }
+
+    .bordertengah-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .bg1{
+        position: absolute;
+        z-index: 18;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+    }
+
+    .bg1-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .bg2{
+        position: absolute;
+        z-index: 17;
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+    }
+
+    .bg2-img{
+        height: auto;
+        width: 100%;
+    }
+
+    .bg3{
+        position: absolute;
+        z-index: 16;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .bg3-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .watu{
+        position: absolute;
+        z-index: 15;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .watu-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .omah{
+        position: absolute;
+        z-index: 14;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .omah-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .atas{
+        position: absolute;
+        top: -90px;
+        z-index: 14;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .atas-img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .jeneng{
+        position: absolute;
+        z-index: 15;
+        width: 100%;
+        height: 100vh;
+        top: -100px;
+    }
+
+    .jeneng-img{
+        height: 100vh;
+        width: 100%;
+        animation: moveCastle 5s ease-in-out infinite;
+    }
+}
