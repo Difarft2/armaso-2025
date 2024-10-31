@@ -1,8 +1,7 @@
-
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
-
 
 p {
   font-family: "Roboto Condensed", sans-serif;

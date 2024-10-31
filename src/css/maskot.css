@@ -1,0 +1,60 @@
+.maskot-container{
+    width: 100vw;
+    position: relative;
+    height: 60vh; 
+    display: flex;
+    gap: 350px ;
+}
+
+.mas-kanan-img{
+    width: 20vw;
+    height: auto;
+}
+
+.mas-kiri-img{
+    width: 19vw;
+    height: auto;
+}
+
+.mas-kanan, .mas-kiri{
+    animation: maskot 5s ease-in-out infinite;
+    -webkit-animation: maskot 5s ease-in-out infinite;
+}
+
+@keyframes maskot {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+    50% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+.mas-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(40, 229, 229, 0.682);
+    border-radius: 30px;
+    padding: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 2px solid black;
+}

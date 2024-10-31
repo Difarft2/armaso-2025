@@ -53,7 +53,7 @@ function ShapeExample() {
   };
 
   return (
-    <Container fluid className="sponsor-con">
+    <Container className="sponsor-con">
       <Row  className="justify-content-center">
         <h1 className="judul-os">Ocean Sponsor</h1>
 

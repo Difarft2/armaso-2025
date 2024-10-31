@@ -1,18 +1,18 @@
 .faq-container-fluid {
-  background-color: rgba(23, 129, 145, 0.7);
-  width: 1200px;
-  height: 700px;
-  margin: 0;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0 15px;
   padding: 50px;
-  border-radius: 30px ;
-  -webkit-border-radius: 30px ;
-  -moz-border-radius: 30px ;
-  -ms-border-radius: 30px ;
-  -o-border-radius: 30px ;
-  margin-bottom: 30px;
+  background-color: rgba(23, 129, 145, 0.7);
+  margin-bottom: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
-.judul-faq {
+.judul-faq{
   color: black;
   font-size: 40px;
 }
@@ -32,7 +32,7 @@
 }
 
 .pertanyaan, .jawaban {
-  font-size: 20px;
+  font-size: 20;
   color: black;
 }
 
@@ -60,14 +60,26 @@
 }
 
 @media (max-width: 768px) {
-  .faq-container-fluid {
+  .faq-container {
     width: 100vw;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(23, 129, 145, 0.7); 
-    box-sizing: border-box;
-    overflow-x: hidden;
-    border-radius: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
   }
 
   .faq-question {

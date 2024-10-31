@@ -6,6 +6,7 @@ import Copyright from "../components/copyright";
 
 // import Loading1 from "../animation/loading1";
 import Parallaxhome from "../animation/parallaxHome";
+import Mascot from '../animation/maskot';
 
 import MenuMapel from "../components/menuMapel";
 import AboutUS from "../components/aboutUS";
@@ -14,9 +15,10 @@ import FAQ from "../components/faq";
 import Sponsor from "../components/sponsor";
 import ContactUS from "../components/contactus";
 
+
 const Home = () => {
   return (
-    <div>
+    <div className='allclass'>
       {/* <Loading1> */}
         <div className="navbarrrr">
           <Navbar />
@@ -29,6 +31,7 @@ const Home = () => {
         <div className="main-content">
           <AboutUS />
           <Timeline />
+          <Mascot/>
           <MenuMapel />
           <FAQ />
           <Sponsor />
