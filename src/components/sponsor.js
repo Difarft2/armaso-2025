@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
+import { contactreval } from "../setting/otherlink";
+
 import img1 from '../other/Logo PT ADELIRA PERKASA  JAYA.png';
 
 function MyVerticallyCenteredModal(props) {
@@ -99,6 +101,12 @@ function ShapeExample() {
         videoLink={modalContent.videoLink}
         buttonCount={modalContent.buttonCount}
       />
+
+      <div className="button-sponsor">
+        <a href={contactreval}  target="_blank" rel="noopener noreferrer">
+          <Button variant="secondary" className="btn_ac" size="lg">Become an Ocean Sponsor</Button></a>
+      </div>
+
     </Container>
   );
 }

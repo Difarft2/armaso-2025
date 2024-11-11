@@ -9,6 +9,16 @@
     overflow: hidden;
 }
 
+.background-mtk {
+    height: 100%;
+    width: 100%;
+    transform: translateY(3vh);
+    -webkit-transform: translateY(3vh);
+    -moz-transform: translateY(3vh);
+    -ms-transform: translateY(3vh);
+    -o-transform: translateY(3vh);
+}
+
 img {
     cursor: default;
 }
@@ -132,23 +142,27 @@ img {
 }
 
 /* Tombol bagian bawah */
-.tombol {
-    margin-left: 10.5vw;
+.buttons-mtk {
+    margin-left: 6vw;
     display: flex;
     gap: 2vw;
-    transform: translateY(10.5vh);
+    transform: translateY(-38vh);
+    -webkit-transform: translateY(-38vh);
+    -moz-transform: translateY(-38vh);
+    -ms-transform: translateY(-38vh);
+    -o-transform: translateY(-38vh);
 }
 
-.bupan {
+.bupan-mtk {
     width: 10%;
     height: auto;
-    z-index: 100;
+    cursor: pointer;
 }
 
-.daftar {
+.daftar-mtk {
     width: 10%;
     height: auto;
-    z-index: 100;
+    cursor: pointer;
 }
 
 

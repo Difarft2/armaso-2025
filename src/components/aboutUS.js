@@ -8,11 +8,11 @@ import "../css/aboutus.css";
 import { aboutusp } from '../setting/content';
 import { tutorial } from '../setting/otherlink';
 
-import gbr1 from "../img/aboutus/12.jpg"
-import gbr2 from "../img/aboutus/22.jpg"
-import gbr3 from "../img/aboutus/2.jpg"
-import gbr4 from "../img/aboutus/4.jpg"
-import gbr5 from "../img/aboutus/5.jpg"
+import gbr1 from "../img/aboutus/12.svg"
+import gbr2 from "../img/aboutus/22.svg"
+import gbr3 from "../img/aboutus/2.svg"
+import gbr4 from "../img/aboutus/4.svg"
+import gbr5 from "../img/aboutus/5.svg"
 
 
 const UncontrolledExample = () => {

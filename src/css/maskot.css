@@ -3,16 +3,16 @@
     position: relative;
     height: 60vh; 
     display: flex;
-    gap: 350px ;
+    gap: 23vw;
 }
 
 .mas-kanan-img{
-    width: 20vw;
+    width: 30vw;
     height: auto;
 }
 
 .mas-kiri-img{
-    width: 19vw;
+    width: 29vw;
     height: auto;
 }
 
@@ -57,4 +57,24 @@
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .maskot-container{
+        width: 100vw;
+        position: relative;
+        height: auto; 
+        display: flex;
+    }
+
+    .mas-kanan-img{
+        width: 30vw;
+        height: auto;
+    }
+    
+    .mas-kiri-img{
+        width: 29vw;
+        height: auto;
+    }
+    
 }

@@ -1,6 +1,6 @@
 //link wa
-export const wa1 = "https://api.whatsapp.com/send/?phone=6281234604006&text=Chat+open+by+https%3A%2F%2Fwhatsappdialer.otutom.com%2Fen%2F&type=phone_number&app_absent=0"
-export const wa2 = "https://api.whatsapp.com/send/?phone=6283847049148&text=Chat+open+by+https%3A%2F%2Fwhatsappdialer.otutom.com%2Fen%2F&type=phone_number&app_absent=0"
+export const wa1 = "https://wa.link/sp6wng"
+export const wa2 = "https://wa.link/k9f2jt"
 
 //other
 export const webarahmat = "https://arrahmat-bjn.sch.id/"
@@ -30,3 +30,6 @@ export const bupanmtk = "https://armaso.arrahmat-bjn.sch.id/Bupang/BUKU%20PANDUA
 
 export const susunan = "https://armaso.arrahmat-bjn.sch.id/Bupang/SUSUNAN%20ACARA.pdf"
 export const GD = "https://drive.google.com/drive/folders/17qGFqnQ2aj55TV6JFftrukmrKzpxLoci"
+
+//Ocean Sponsor
+export const contactreval = "https://api.whatsapp.com/send/?phone=6282288894141&text=Chat+open+by+https%3A%2F%2Fwhatsappdialer.otutom.com%2Fen%2F&type=phone_number&app_absent=0"

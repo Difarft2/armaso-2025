@@ -8,17 +8,9 @@ import Copyright from "../components/copyright";
 import ContactUS from "../components/contactus"
 import Nav from "../components/navbar";
 
-import ombak from "../img/pretelan/img5.png";
-import gelap1 from "../img/pretelan/img7.png";
-import gelap2 from "../img/pretelan/img8.png";
-import armaso from "../img/pretelan/img4.png";
-import btbupan from "../img/pretelan/img1.png";
-import btdaftar from "../img/pretelan/img2.png";
-import karang from "../img/pretelan/img6.png";
-import cardipa from "../img/pretelan/card-ipa.png";
-import textscience from "../img/pretelan/img3.png";
-import textcomment from "../img/pretelan/img10.png";
-import alas3 from "../img/pretelan/img9.png";
+import bgipa from "../img/pretelan/science-01.svg";
+import daftaripa from "../img/pretelan/daftar.svg";
+import bukpanipa from "../img/pretelan/bupan.svg";
 
 import alashp from "../img/pretelan/yanto.png";
 import karanghp from "../img/pretelan/2-01.png";
@@ -31,6 +23,7 @@ import daftarhp from "../img/pretelan/img2.png";
 import bupanhp from "../img/pretelan/img1.png";
 
 import {  bupanipa, register } from "../setting/otherlink";
+import Loading1 from "../animation/loading1";
 
 
 
@@ -41,8 +34,8 @@ const Ipa =()=>{
     const handleCloseModal2 = () => setShowModal2(false);
     const handleShowModal2 = () => setShowModal2(true);
     return(
-    <div>
-
+      <Loading1>
+        <div>  
     <Nav/>
 
                         {/* Desktop */}
@@ -51,30 +44,13 @@ const Ipa =()=>{
 
     <div className="pretelan-desktop">
 
-    <div className="container-ombak">
-        <img className="ombak" src={ombak} alt="" />
+    <img className="background-ipa" src={bgipa} alt=""/>
+
+    <div className="buttons-ipa">
+      <img className="daftar-ipa" src={daftaripa} alt=""   onClick={() => window.open(register, '_blank')}/>
+      <img className="bupan-ipa" src={bukpanipa} alt="" onClick={handleShowModal2} />
     </div>
 
-    <div className="container-alas">
-        <img className="alas1" src={gelap1} alt="" />
-        <img className="alas2" src={gelap2} alt="" />
-        <img className="alas3" src={alas3} alt="" />
-        <img className="karang" src={karang} alt="" />
-        <img className="card-ipa" src={cardipa} alt="" />
-    </div>
-
-    <div className="circle-text">
-    <div className="container-text">
-        <img className="armaso" src={armaso} alt="" />
-        <img className="text-science" src={textscience} alt="" />
-        <img className="text-keterangan" src={textcomment} alt="" />
-    </div>
-    <div className="tombol">
-            <img className="daftar" src={btdaftar} alt=""   onClick={() => window.open(register, '_blank')}/>
-            <img className="bupan" src={btbupan} alt="" onClick={handleShowModal2}/>
-        
-    </div> 
-    </div>
     </div>
 
                             {/* HP */}
@@ -119,7 +95,9 @@ const Ipa =()=>{
         </a>
         </Modal.Footer>
       </Modal>
+
     </div>
+      </Loading1>
     )
 }
 

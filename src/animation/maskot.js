@@ -1,7 +1,7 @@
 import '../css/maskot.css';
 
-import mas_lk from "../other/maskot/msk_lk.png";
-import mas_pr from "../other/maskot/msk_pr.png";
+import mas_lk from "../other/maskot/Lanang.svg";
+import mas_pr from "../other/maskot/Wedok.svg";
 
 const Mascot = () => {
 

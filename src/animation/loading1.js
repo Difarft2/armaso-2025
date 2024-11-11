@@ -12,7 +12,7 @@ const Loading1 = ({ children }) => {
       setTimeout(() => {
         setLoading(false); 
       }, 4000); 
-    }, 9000); 
+    }, 5000); 
 
     return () => clearTimeout(timer); 
   }, []);
@@ -35,6 +35,7 @@ const Loading1 = ({ children }) => {
           <video
             autoPlay
             muted
+            playsInline
             className={fadeOut ? "fade-out" : "fade-in"} 
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           >

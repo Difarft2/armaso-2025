@@ -17,6 +17,14 @@
     -o-transform: scale(1.05);
 }
 
+.button-sponsor {
+    display: block;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    font-size: 16px;
+    bottom: 2vh;
+    padding: 20px;
+  }
 
 @media (min-width: 576px) {
     .col-sm-6 {

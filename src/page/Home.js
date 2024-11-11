@@ -4,7 +4,7 @@ import "../css/home.css";
 import Navbar from "../components/navbar";
 import Copyright from "../components/copyright";
 
-// import Loading1 from "../animation/loading1";
+import Loading1 from "../animation/loading1";
 import Parallaxhome from "../animation/parallaxHome";
 import Mascot from '../animation/maskot';
 
@@ -19,7 +19,7 @@ import ContactUS from "../components/contactus";
 const Home = () => {
   return (
     <div className='allclass'>
-      {/* <Loading1> */}
+      <Loading1>
         <div className="navbarrrr">
           <Navbar />
         </div>
@@ -42,7 +42,7 @@ const Home = () => {
         </div>
 
         <Copyright />
-      {/* </Loading1> */}
+      </Loading1>
     </div>
   );
 };

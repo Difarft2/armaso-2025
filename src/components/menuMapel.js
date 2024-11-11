@@ -13,19 +13,19 @@ const MenuMapel =()=>{
 
                 <div className="Menu-container" id="menumapel">
                     <div className="IPA-contaiener">
-                        <a href="/Mapel/Ipa" className="IPA-button">
+                        <a href="/Mapel/Ipa" className="IPA-button" target="_blank" rel="noopener noreferrer">
                             <img src={Ipa} alt="IPA" className="card1" />
                         </a>
                     </div>
 
                     <div className="IPS-container">
-                        <a href="/Mapel/Ips" className="IPS-button">
+                        <a href="/Mapel/Ips" className="IPS-button" target="_blank" rel="noopener noreferrer">
                             <img src={Ips} alt="IPS" className="card2" />
                         </a>
                     </div>
 
                     <div className="MTK-container">
-                        <a href="/Mapel/Mtk" className="MTK-button">
+                        <a href="/Mapel/Mtk" className="MTK-button" target="_blank" rel="noopener noreferrer">
                             <img src={Mtk} alt="MTK" className="card3" />
                         </a>
                     </div>
